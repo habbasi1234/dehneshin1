@@ -1,0 +1,981 @@
+﻿
+> az-chob-iranian@1.0.0 test
+> vitest run
+
+[2m3:46:02 PM[22m [33m[1m[vite][22m[39m [33mwarning: `esbuild` option was specified by "vite:react-babel" plugin. This option is deprecated, please use `oxc` instead.[39m
+[2m3:46:02 PM[22m [33m[1m[vite][22m[39m [33mwarning: `optimizeDeps.esbuildOptions` option was specified by "vite:react-babel" plugin. This option is deprecated, please use `optimizeDeps.rolldownOptions` instead.[39m
+[33mBoth esbuild and oxc options were set. oxc options will be used and esbuild options will be ignored.[39m The following esbuild options were set: `{ jsx: 'automatic', jsxImportSource: undefined }`
+
+[1m[30m[46m RUN [49m[39m[22m [36mv4.1.8 [39m[90mH:/mobl/client[39m
+
+ [32mΓ£ô[39m src/test/Products.test.jsx [2m([22m[2m8 tests[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32mΓ£ô[39m src/test/helpers.test.js [2m([22m[2m16 tests[22m[2m)[22m[32m 5[2mms[22m[39m
+ [32mΓ£ô[39m src/test/seoBackend.test.js [2m([22m[2m28 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32mΓ£ô[39m src/test/useSEO.test.js [2m([22m[2m30 tests[22m[2m)[22m[32m 86[2mms[22m[39m
+ [32mΓ£ô[39m src/test/ConfirmModal.test.jsx [2m([22m[2m5 tests[22m[2m)[22m[32m 123[2mms[22m[39m
+[90mstderr[2m | src/test/AdminSEO.test.jsx[2m > [22m[2mAdminSEO - Report Tab[2m > [22m[2mshows loading text when no report yet
+[22m[39mWarning: An update to AdminSEO inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:221:58)
+
+[90mstderr[2m | src/test/AdminSEO.test.jsx[2m > [22m[2mAdminSEO - Sitemap Tab[2m > [22m[2mfetches sitemap on button click
+[22m[39mWarning: An update to AdminSEO inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:221:58)
+Warning: An update to AdminSEO inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:221:58)
+
+[90mstderr[2m | src/test/AdminSEO.test.jsx[2m > [22m[2mAdminSEO - Sitemap Tab[2m > [22m[2mdisplays sitemap XML content
+[22m[39mWarning: An update to AdminSEO inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:221:58)
+Warning: An update to AdminSEO inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:221:58)
+
+[90mstderr[2m | src/test/AdminSEO.test.jsx[2m > [22m[2mAdminSEO - Sitemap Tab[2m > [22m[2mgenerates sitemap on click
+[22m[39mWarning: An update to AdminSEO inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:221:58)
+Warning: An update to AdminSEO inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:221:58)
+
+[90mstderr[2m | src/test/AdminSEO.test.jsx[2m > [22m[2mAdminSEO - Sitemap Tab[2m > [22m[2mshows error message on fetch failure
+[22m[39mWarning: An update to AdminSEO inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:221:58)
+
+[90mstderr[2m | src/test/AdminSEO.test.jsx[2m > [22m[2mAdminSEO - Extract Tab[2m > [22m[2menables extract button when URL is entered
+[22m[39mWarning: An update to AdminSEO inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:221:58)
+Warning: An update to AdminSEO inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:221:58)
+
+[90mstderr[2m | src/test/AdminSEO.test.jsx[2m > [22m[2mAdminSEO - Section Component[2m > [22m[2mrenders section title
+[22m[39mWarning: An update to AdminSEO inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:221:58)
+Warning: An update to AdminSEO inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:221:58)
+
+ [31mΓ¥»[39m src/test/AdminSEO.test.jsx [2m([22m[2m42 tests[22m[2m | [22m[31m6 failed[39m[2m)[22m[33m 2648[2mms[22m[39m
+[31m     [31m├ù[31m renders all 6 tab buttons[39m[32m 183[2mms[22m[39m
+     [32mΓ£ô[39m defaults to pages tab[32m 51[2mms[22m[39m
+     [32mΓ£ô[39m switches to report tab on click[32m 64[2mms[22m[39m
+     [32mΓ£ô[39m switches to schema tab on click[32m 59[2mms[22m[39m
+[31m     [31m├ù[31m switches to sitemap tab on click[39m[33m 1020[2mms[22m[39m
+     [32mΓ£ô[39m switches to extract tab on click[32m 54[2mms[22m[39m
+     [32mΓ£ô[39m fetches and displays all page cards from API[32m 56[2mms[22m[39m
+     [32mΓ£ô[39m shows page paths on cards[32m 48[2mms[22m[39m
+     [32mΓ£ô[39m renders title input fields[32m 47[2mms[22m[39m
+     [32mΓ£ô[39m shows preview with page title[32m 42[2mms[22m[39m
+     [32mΓ£ô[39m updates input fields on change[32m 53[2mms[22m[39m
+     [32mΓ£ô[39m calls save API when save button clicked[32m 47[2mms[22m[39m
+     [32mΓ£ô[39m shows loading state on save[32m 44[2mms[22m[39m
+     [32mΓ£ô[39m shows saved confirmation after save[32m 54[2mms[22m[39m
+     [32mΓ£ô[39m fetches report on mount[32m 36[2mms[22m[39m
+     [32mΓ£ô[39m displays report data[32m 54[2mms[22m[39m
+     [32mΓ£ô[39m shows issue counts[32m 16[2mms[22m[39m
+     [32mΓ£ô[39m shows content type counts[32m 14[2mms[22m[39m
+     [32mΓ£ô[39m refreshes report on button click[32m 28[2mms[22m[39m
+     [32mΓ£ô[39m shows loading text when no report yet[32m 11[2mms[22m[39m
+     [32mΓ£ô[39m loads schema when ╪¿╪º╪▒┌»╪░╪º╪▒█î button is clicked[32m 13[2mms[22m[39m
+     [32mΓ£ô[39m displays schema JSON in textarea after loading[32m 29[2mms[22m[39m
+     [32mΓ£ô[39m saves schema on button click after loading[32m 28[2mms[22m[39m
+     [32mΓ£ô[39m shows alert on invalid JSON[32m 13[2mms[22m[39m
+     [32mΓ£ô[39m loads schema fresh on ╪¿╪º╪▒┌»╪░╪º╪▒█î button click[32m 29[2mms[22m[39m
+[31m     [31m├ù[31m fetches sitemap on button click[39m[32m 40[2mms[22m[39m
+[31m     [31m├ù[31m displays sitemap XML content[39m[32m 37[2mms[22m[39m
+[31m     [31m├ù[31m generates sitemap on click[39m[32m 35[2mms[22m[39m
+[31m     [31m├ù[31m shows error message on fetch failure[39m[32m 7[2mms[22m[39m
+     [32mΓ£ô[39m renders URL input[32m 25[2mms[22m[39m
+     [32mΓ£ô[39m disables extract button when URL is empty[32m 17[2mms[22m[39m
+     [32mΓ£ô[39m enables extract button when URL is entered[32m 11[2mms[22m[39m
+     [32mΓ£ô[39m calls extract API on button click[32m 15[2mms[22m[39m
+     [32mΓ£ô[39m displays extracted title[32m 28[2mms[22m[39m
+     [32mΓ£ô[39m displays extracted description[32m 15[2mms[22m[39m
+     [32mΓ£ô[39m displays extracted keywords[32m 16[2mms[22m[39m
+     [32mΓ£ô[39m shows error when extract fails[32m 19[2mms[22m[39m
+     [32mΓ£ô[39m handles pages fetch error gracefully[32m 7[2mms[22m[39m
+     [32mΓ£ô[39m handles report fetch error gracefully[32m 11[2mms[22m[39m
+     [32mΓ£ô[39m handles save error gracefully[32m 49[2mms[22m[39m
+     [32mΓ£ô[39m renders section title[32m 35[2mms[22m[39m
+     [32mΓ£ô[39m renders text inputs[32m 185[2mms[22m[39m
+
+[31mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[39m[1m[41m Failed Tests 6 [49m[22m[31mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[39m
+
+[41m[1m FAIL [22m[49m src/test/AdminSEO.test.jsx[2m > [22mAdminSEO - Tab Navigation[2m > [22mrenders all 6 tab buttons
+[31m[1mTestingLibraryElementError[22m[39m: Unable to find an element with the text: ≡ƒù║ ┘å┘é╪┤┘ç ╪│╪º█î╪¬. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div>[39m
+      [36m<div[39m
+        [33mstyle[39m=[32m"display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap;"[39m
+      [36m>[39m
+        [36m<button[39m
+          [33mstyle[39m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgb(212, 175, 55); background: rgba(212, 175, 55, 0.1); color: rgb(212, 175, 55); cursor: pointer; font-size: 12px; font-weight: 700; transition: all 0.2s;"[39m
+        [36m>[39m
+          [0m≡ƒôä ╪╡┘ü╪¡╪º╪¬[0m
+        [36m</button>[39m
+        [36m<button[39m
+          [33mstyle[39m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[39m
+        [36m>[39m
+          [0m≡ƒôè ┌»╪▓╪º╪▒╪┤[0m
+        [36m</button>[39m
+        [36m<button[39m
+          [33mstyle[39m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[39m
+        [36m>[39m
+          [0m≡ƒöº Schema[0m
+        [36m</button>[39m
+        [36m<button[39m
+          [33mstyle[39m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[39m
+        [36m>[39m
+          [0m≡ƒù║ Sitemap[0m
+        [36m</button>[39m
+        [36m<button[39m
+          [33mstyle[39m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[39m
+        [36m>[39m
+          [0m≡ƒöì ╪º╪│╪¬╪«╪▒╪º╪¼ ┌⌐┘ä┘à╪º╪¬[0m
+        [36m</button>[39m
+        [36m<button[39m
+          [33mstyle[39m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[39m
+        [36m>[39m
+          [0m≡ƒò╖ ╪«╪▓╪┤ ┘ê ╪▒┘é╪¿╪º[0m
+        [36m</button>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mstyle[39m=[32m"background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(212, 175, 55, 0.12); border-radius: 12px; padding: 24px; margin-bottom: 20px;"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mstyle[39m=[32m"display: flex; align-items: center; gap: 10px; margin-bottom: 4px;"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"width: 3px; height: 20px; background: linear-gradient(180deg, rgb(212, 175, 55), rgb(160, 135, 43)); border-radius: 2px;"[39m
+          [36m/>[39m
+          [36m<h2[39m
+            [33mstyle[39m=[32m"color: rgb(245, 230, 200); font-size: 16px; font-weight: 700; margin: 0px;"[39m
+          [36m>[39m
+            [0m┘à╪»█î╪▒█î╪¬ SEO ╪╡┘ü╪¡╪º╪¬[0m
+          [36m</h2>[39m
+        [36m</div>[39m
+        [36m<p[39m
+          [33mstyle[39m=[32m"color: rgb(168, 152, 128); font-size: 12px; margin: 0px 0px 16px 13px;"[39m
+        [36m>[39m
+          [0m╪╣┘å┘ê╪º┘å╪î ╪¬┘ê╪╢█î╪¡╪º╪¬ ┘ê ┌⌐┘ä┘à╪º╪¬ ┌⌐┘ä█î╪»█î ┘ç╪▒ ╪╡┘ü╪¡┘ç ╪▒╪º ╪¿┘ç ╪╡┘ê╪▒╪¬ ┘à╪¼╪▓╪º ┘à╪»█î╪▒█î╪¬ ┌⌐┘å█î╪»[0m
+        [36m</p>[39m
+        [36m<div[39m
+          [33mstyle[39m=[32m"display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px;"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"background: rgba(0, 0, 0, 0.2); border-radius: 10px; padding: 16px; border: 1px solid rgba(212, 175, 55, 0.12); position: relative;"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mstyle[39m=[32m"display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;"[39m
+            [36m>[39m
+              [36m<span[39m
+                [33mstyle[39m=[32m"color: rgb(212, 175, 55); font-size: 12px; font-weight: 700;"[39m
+              [36m>[39m
+                [0m╪╡┘ü╪¡┘ç ╪º╪╡┘ä█î[0m
+              [36m</span>[39m
+              [36m<span[39m
+                [33mstyle[39m=[32m"color: rgb(168, 152, 128); font-size: 10px; font-family: monospace;"[39m
+              [36m>[39m
+                [0m/[0m
+              [36m</span>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mstyle[39m=[32m"margin-bottom: 12px;"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"f-dnvt"[39m
+                [33mstyle[39m=[32m"display: block; color: rgb(168, 152, 128); font-size: 11px; margin-bottom: 4px; font-weight: 500;"[39m
+              [36m>[39m
+                [0m╪╣┘å┘ê╪º┘å (Title)[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"f-dnvt"[39m
+                [33mmaxlength[39m=[32m"70"[39m
+                [33mstyle[39m=[32m"width: 100%; padding: 8px 10px; border-radius: 6px; border: 1px solid rgba(212, 175, 55, 0.12); background: rgba(0, 0, 0, 0.3); color: rgb(245, 230, 200); font-size: 13px; font-family: inherit; direction: rtl;"[39m
+                [33mvalue[39m=[32m"╪«╪º┘å┘ç"[39m
+              [36m/>[39m
+              [36m<span[39m
+                [33mstyle[39m=[32m"font-size: 10px; color: rgb(168, 152, 128); margin-top: 2px; display: block; text-align: left;"[39m
+              [36m>[39m
+                [0m╪¡╪»╪º┌⌐╪½╪▒ [0m
+                [0m70[0m
+                [0m ┌⌐╪º╪▒╪º┌⌐╪¬╪▒[0m
+              [36m</span>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mstyle[39m=[32m"margin-bottom: 12px;"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"f-hq1x"[39m
+                [33mstyle[39m=[32m"display: block; color: rgb(168, 152, 128); font-size: 11px; margin-bottom: 4px; font-weight: 500;"[39m
+              [36m>[39m
+                [0m╪¬┘ê╪╢█î╪¡╪º╪¬ (Description)[0m
+              [36m</label>[39m
+              [36m<textarea[39m
+                [33mid[39m=[32m"f-hq1x"[39m
+                [33mmaxlength[39m=[32m"160"[39m
+                [33mrows[39m=[32m"3"[39m
+                [33mstyle[39m=[32m"width: 100%; padding: 8px 10px; border-radius: 6px; border: 1px solid rgba(212, 175, 55, 0.12); background: rgba(0, 0, 0, 0.3); color: rgb(245, 230, 200); font-size: 13px; resize: vertical; font-family: inherit; direction: rtl;"[39m
+              [36m>[39m
+                [0m╪¬┘ê╪╢█î╪¡╪º╪¬ ╪«╪º┘å┘ç[0m
+              [36m</textarea>[39m
+              [36m<span[39m
+                [33mstyle[39m=[32m"font-size: 10px; color: rgb(168, 152, 128); margin-top: 2px; display: block; text-align: left;"[39m
+              [36m>[39m
+                [0m╪¡╪»╪º┌⌐╪½╪▒ [0m
+                [0m160[0m
+                [0m ┌⌐╪º╪▒╪º┌⌐╪¬╪▒[0m
+              [36m</span>...
+[90m [2mΓ¥»[22m Object.getElementError node_modules/@testing-library/dom/dist/config.js:[2m37:19[22m[39m
+[90m [2mΓ¥»[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m76:38[22m[39m
+[90m [2mΓ¥»[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m52:17[22m[39m
+[90m [2mΓ¥»[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m95:19[22m[39m
+[36m [2mΓ¥»[22m src/test/AdminSEO.test.jsx:[2m60:19[22m[39m
+    [90m 58|[39m     [34mexpect[39m(screen[33m.[39m[34mgetByText[39m([32m'≡ƒôè ┌»╪▓╪º╪▒╪┤'[39m))[33m.[39m[34mtoBeDefined[39m()
+    [90m 59|[39m     [34mexpect[39m(screen[33m.[39m[34mgetByText[39m([32m'≡ƒöº Schema'[39m))[33m.[39m[34mtoBeDefined[39m()
+    [90m 60|[39m     [34mexpect[39m(screen[33m.[39m[34mgetByText[39m([32m'≡ƒù║ ┘å┘é╪┤┘ç ╪│╪º█î╪¬'[39m))[33m.[39m[34mtoBeDefined[39m()
+    [90m   |[39m                   [31m^[39m
+    [90m 61|[39m     [34mexpect[39m(screen[33m.[39m[34mgetByText[39m([32m'≡ƒöì ╪º╪│╪¬╪«╪▒╪º╪¼ ┌⌐┘ä┘à╪º╪¬'[39m))[33m.[39m[34mtoBeDefined[39m()
+    [90m 62|[39m     [34mexpect[39m(screen[33m.[39m[34mgetByText[39m([32m'≡ƒò╖ ╪«╪▓╪┤ ┘ê ╪▒┘é╪¿╪º'[39m))[33m.[39m[34mtoBeDefined[39m()
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[1/6]ΓÄ»[22m[39m
+
+[41m[1m FAIL [22m[49m src/test/AdminSEO.test.jsx[2m > [22mAdminSEO - Tab Navigation[2m > [22mswitches to sitemap tab on click
+[31m[1mTestingLibraryElementError[22m[39m: Unable to find an element with the text: ≡ƒù║ ┘å┘é╪┤┘ç ╪│╪º█î╪¬. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div>[39m
+      [36m<div[39m
+        [33mstyle[39m=[32m"display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap;"[39m
+      [36m>[39m
+        [36m<button[39m
+          [33mstyle[39m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgb(212, 175, 55); background: rgba(212, 175, 55, 0.1); color: rgb(212, 175, 55); cursor: pointer; font-size: 12px; font-weight: 700; transition: all 0.2s;"[39m
+        [36m>[39m
+          [0m≡ƒôä ╪╡┘ü╪¡╪º╪¬[0m
+        [36m</button>[39m
+        [36m<button[39m
+          [33mstyle[39m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[39m
+        [36m>[39m
+          [0m≡ƒôè ┌»╪▓╪º╪▒╪┤[0m
+        [36m</button>[39m
+        [36m<button[39m
+          [33mstyle[39m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[39m
+        [36m>[39m
+          [0m≡ƒöº Schema[0m
+        [36m</button>[39m
+        [36m<button[39m
+          [33mstyle[39m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[39m
+        [36m>[39m
+          [0m≡ƒù║ Sitemap[0m
+        [36m</button>[39m
+        [36m<button[39m
+          [33mstyle[39m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[39m
+        [36m>[39m
+          [0m≡ƒöì ╪º╪│╪¬╪«╪▒╪º╪¼ ┌⌐┘ä┘à╪º╪¬[0m
+        [36m</button>[39m
+        [36m<button[39m
+          [33mstyle[39m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[39m
+        [36m>[39m
+          [0m≡ƒò╖ ╪«╪▓╪┤ ┘ê ╪▒┘é╪¿╪º[0m
+        [36m</button>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mstyle[39m=[32m"background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(212, 175, 55, 0.12); border-radius: 12px; padding: 24px; margin-bottom: 20px;"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mstyle[39m=[32m"display: flex; align-items: center; gap: 10px; margin-bottom: 4px;"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"width: 3px; height: 20px; background: linear-gradient(180deg, rgb(212, 175, 55), rgb(160, 135, 43)); border-radius: 2px;"[39m
+          [36m/>[39m
+          [36m<h2[39m
+            [33mstyle[39m=[32m"color: rgb(245, 230, 200); font-size: 16px; font-weight: 700; margin: 0px;"[39m
+          [36m>[39m
+            [0m┘à╪»█î╪▒█î╪¬ SEO ╪╡┘ü╪¡╪º╪¬[0m
+          [36m</h2>[39m
+        [36m</div>[39m
+        [36m<p[39m
+          [33mstyle[39m=[32m"color: rgb(168, 152, 128); font-size: 12px; margin: 0px 0px 16px 13px;"[39m
+        [36m>[39m
+          [0m╪╣┘å┘ê╪º┘å╪î ╪¬┘ê╪╢█î╪¡╪º╪¬ ┘ê ┌⌐┘ä┘à╪º╪¬ ┌⌐┘ä█î╪»█î ┘ç╪▒ ╪╡┘ü╪¡┘ç ╪▒╪º ╪¿┘ç ╪╡┘ê╪▒╪¬ ┘à╪¼╪▓╪º ┘à╪»█î╪▒█î╪¬ ┌⌐┘å█î╪»[0m
+        [36m</p>[39m
+        [36m<div[39m
+          [33mstyle[39m=[32m"display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px;"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"background: rgba(0, 0, 0, 0.2); border-radius: 10px; padding: 16px; border: 1px solid rgba(212, 175, 55, 0.12); position: relative;"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mstyle[39m=[32m"display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;"[39m
+            [36m>[39m
+              [36m<span[39m
+                [33mstyle[39m=[32m"color: rgb(212, 175, 55); font-size: 12px; font-weight: 700;"[39m
+              [36m>[39m
+                [0m╪╡┘ü╪¡┘ç ╪º╪╡┘ä█î[0m
+              [36m</span>[39m
+              [36m<span[39m
+                [33mstyle[39m=[32m"color: rgb(168, 152, 128); font-size: 10px; font-family: monospace;"[39m
+              [36m>[39m
+                [0m/[0m
+              [36m</span>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mstyle[39m=[32m"margin-bottom: 12px;"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"f-3rqj"[39m
+                [33mstyle[39m=[32m"display: block; color: rgb(168, 152, 128); font-size: 11px; margin-bottom: 4px; font-weight: 500;"[39m
+              [36m>[39m
+                [0m╪╣┘å┘ê╪º┘å (Title)[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"f-3rqj"[39m
+                [33mmaxlength[39m=[32m"70"[39m
+                [33mstyle[39m=[32m"width: 100%; padding: 8px 10px; border-radius: 6px; border: 1px solid rgba(212, 175, 55, 0.12); background: rgba(0, 0, 0, 0.3); color: rgb(245, 230, 200); font-size: 13px; font-family: inherit; direction: rtl;"[39m
+                [33mvalue[39m=[32m"╪«╪º┘å┘ç"[39m
+              [36m/>[39m
+              [36m<span[39m
+                [33mstyle[39m=[32m"font-size: 10px; color: rgb(168, 152, 128); margin-top: 2px; display: block; text-align: left;"[39m
+              [36m>[39m
+                [0m╪¡╪»╪º┌⌐╪½╪▒ [0m
+                [0m70[0m
+                [0m ┌⌐╪º╪▒╪º┌⌐╪¬╪▒[0m
+              [36m</span>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mstyle[39m=[32m"margin-bottom: 12px;"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"f-0geh"[39m
+                [33mstyle[39m=[32m"display: block; color: rgb(168, 152, 128); font-size: 11px; margin-bottom: 4px; font-weight: 500;"[39m
+              [36m>[39m
+                [0m╪¬┘ê╪╢█î╪¡╪º╪¬ (Description)[0m
+              [36m</label>[39m
+              [36m<textarea[39m
+                [33mid[39m=[32m"f-0geh"[39m
+                [33mmaxlength[39m=[32m"160"[39m
+                [33mrows[39m=[32m"3"[39m
+                [33mstyle[39m=[32m"width: 100%; padding: 8px 10px; border-radius: 6px; border: 1px solid rgba(212, 175, 55, 0.12); background: rgba(0, 0, 0, 0.3); color: rgb(245, 230, 200); font-size: 13px; resize: vertical; font-family: inherit; direction: rtl;"[39m
+              [36m>[39m
+                [0m╪¬┘ê╪╢█î╪¡╪º╪¬ ╪«╪º┘å┘ç[0m
+              [36m</textarea>[39m
+              [36m<span[39m
+                [33mstyle[39m=[32m"font-size: 10px; color: rgb(168, 152, 128); margin-top: 2px; display: block; text-align: left;"[39m
+              [36m>[39m
+                [0m╪¡╪»╪º┌⌐╪½╪▒ [0m
+                [0m160[0m
+                [0m ┌⌐╪º╪▒╪º┌⌐╪¬╪▒[0m
+              [36m</span>...
+
+Ignored nodes: comments, script, style
+[36m<html>[39m
+  [36m<head />[39m
+  [36m<body>[39m
+    [36m<div>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mstyle[39m=[32m"display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap;"[39m
+        [36m>[39m
+          [36m<button[39m
+            [33mstyle[39m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgb(212, 175, 55); background: rgba(212, 175, 55, 0.1); color: rgb(212, 175, 55); cursor: pointer; font-size: 12px; font-weight: 700; transition: all 0.2s;"[39m
+          [36m>[39m
+            [0m≡ƒôä ╪╡┘ü╪¡╪º╪¬[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mstyle[39m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[39m
+          [36m>[39m
+            [0m≡ƒôè ┌»╪▓╪º╪▒╪┤[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mstyle[39m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[39m
+          [36m>[39m
+            [0m≡ƒöº Schema[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mstyle[39m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[39m
+          [36m>[39m
+            [0m≡ƒù║ Sitemap[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mstyle[39m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[39m
+          [36m>[39m
+            [0m≡ƒöì ╪º╪│╪¬╪«╪▒╪º╪¼ ┌⌐┘ä┘à╪º╪¬[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mstyle[39m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[39m
+          [36m>[39m
+            [0m≡ƒò╖ ╪«╪▓╪┤ ┘ê ╪▒┘é╪¿╪º[0m
+          [36m</button>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mstyle[39m=[32m"background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(212, 175, 55, 0.12); border-radius: 12px; padding: 24px; margin-bottom: 20px;"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"display: flex; align-items: center; gap: 10px; margin-bottom: 4px;"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mstyle[39m=[32m"width: 3px; height: 20px; background: linear-gradient(180deg, rgb(212, 175, 55), rgb(160, 135, 43)); border-radius: 2px;"[39m
+            [36m/>[39m
+            [36m<h2[39m
+              [33mstyle[39m=[32m"color: rgb(245, 230, 200); font-size: 16px; font-weight: 700; margin: 0px;"[39m
+            [36m>[39m
+              [0m┘à╪»█î╪▒█î╪¬ SEO ╪╡┘ü╪¡╪º╪¬[0m
+            [36m</h2>[39m
+          [36m</div>[39m
+          [36m<p[39m
+            [33mstyle[39m=[32m"color: rgb(168, 152, 128); font-size: 12px; margin: 0px 0px 16px 13px;"[39m
+          [36m>[39m
+            [0m╪╣┘å┘ê╪º┘å╪î ╪¬┘ê╪╢█î╪¡╪º╪¬ ┘ê ┌⌐┘ä┘à╪º╪¬ ┌⌐┘ä█î╪»█î ┘ç╪▒ ╪╡┘ü╪¡┘ç ╪▒╪º ╪¿┘ç ╪╡┘ê╪▒╪¬ ┘à╪¼╪▓╪º ┘à╪»█î╪▒█î╪¬ ┌⌐┘å█î╪»[0m
+          [36m</p>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px;"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mstyle[39m=[32m"background: rgba(0, 0, 0, 0.2); border-radius: 10px; padding: 16px; border: 1px solid rgba(212, 175, 55, 0.12); position: relative;"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;"[39m
+              [36m>[39m
+                [36m<span[39m
+                  [33mstyle[39m=[32m"color: rgb(212, 175, 55); font-size: 12px; font-weight: 700;"[39m
+                [36m>[39m
+                  [0m╪╡┘ü╪¡┘ç ╪º╪╡┘ä█î[0m
+                [36m</span>[39m
+                [36m<span[39m
+                  [33mstyle[39m=[32m"color: rgb(168, 152, 128); font-size: 10px; font-family: monospace;"[39m
+                [36m>[39m
+                  [0m/[0m
+                [36m</span>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"margin-bottom: 12px;"[39m
+              [36m>[39m
+                [36m<label[39m
+                  [33mfor[39m=[32m"f-3rqj"[39m
+                  [33mstyle[39m=[32m"display: block; color: rgb(168, 152, 128); font-size: 11px; margin-bottom: 4px; font-weight: 500;"[39m
+                [36m>[39m
+                  [0m╪╣┘å┘ê╪º┘å (Title)[0m
+                [36m</label>[39m
+                [36m<input[39m
+                  [33mid[39m=[32m"f-3rqj"[39m
+                  [33mmaxlength[39m=[32m"70"[39m
+                  [33mstyle[39m=[32m"width: 100%; padding: 8px 10px; border-radius: 6px; border: 1px solid rgba(212, 175, 55, 0.12); background: rgba(0, 0, 0, 0.3); color: rgb(245, 230, 200); font-size: 13px; font-family: inherit; direction: rtl;"[39m
+                  [33mvalue[39m=[32m"╪«╪º┘å┘ç"[39m
+                [36m/>[39m
+                [36m<span[39m
+                  [33mstyle[39m=[32m"font-size: 10px; color: rgb(168, 152, 128); margin-top: 2px; display: block; text-align: left;"[39m
+                [36m>[39m
+                  [0m╪¡╪»╪º┌⌐╪½╪▒ [0m
+                  [0m70[0m
+                  [0m ┌⌐╪º╪▒╪º┌⌐╪¬╪▒[0m
+                [36m</span>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"margin-bottom: 12px;"[39m
+              [36m>[39m
+                [36m<label[39m
+                  [33mfor[39m=[32m"f-0geh"[39m
+                  [33mstyle[39m=[32m"display: block; color: rgb(168, 152, 128); font-size: 11px; margin-bottom: 4px; font-weight: 500;"[39m
+                [36m>[39m
+                  [0m╪¬┘ê╪╢█î╪¡╪º╪¬ (Description)[0m
+                [36m</label>[39m
+                [36m<textarea[39m
+                  [33mid[39m=[32m"f-0geh"[39m
+                  [33mmaxlength[39m=[32m"160"[39m
+                  [33mrows[39m=[32m"3"[39m
+                  [33mstyle[39m=[32m"width: 100%; padding: 8px 10px; border-radius: 6px; border: 1px solid rgba(212, 175, 55, 0.12); background: rgba(0, 0, 0, 0.3); color: rgb(245, 230, 200); font-size: 13px; resize: vertical; font-family: inherit; direction: rtl;"[39m
+                [36m>[39m
+                  [0m╪¬┘ê╪╢█î╪¡╪º╪¬ ╪«╪º┘å┘ç[0m
+                [36m</textarea>[39m
+                [36m<span[39m
+           ...
+[90m [2mΓ¥»[22m Proxy.waitForWrapper node_modules/@testing-library/dom/dist/wait-for.js:[2m163:27[22m[39m
+[36m [2mΓ¥»[22m src/test/AdminSEO.test.jsx:[2m92:11[22m[39m
+    [90m 90|[39m   [34mit[39m([32m'switches to sitemap tab on click'[39m[33m,[39m [35masync[39m () [33m=>[39m {
+    [90m 91|[39m     [34mrender[39m([33m<[39m[33mAdminSEO[39m [33m/[39m[33m>[39m)
+    [90m 92|[39m     await waitFor(() => expect(screen.getByText('≡ƒù║ ┘å┘é╪┤┘ç ╪│╪º█î╪¬')).toBeDΓÇª
+    [90m   |[39m           [31m^[39m
+    [90m 93|[39m     fireEvent[33m.[39m[34mclick[39m(screen[33m.[39m[34mgetByText[39m([32m'≡ƒù║ ┘å┘é╪┤┘ç ╪│╪º█î╪¬'[39m))
+    [90m 94|[39m     [34mexpect[39m(screen[33m.[39m[34mgetByText[39m([32m'┘å┘é╪┤┘ç ╪│╪º█î╪¬'[39m))[33m.[39m[34mtoBeDefined[39m()
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[2/6]ΓÄ»[22m[39m
+
+[41m[1m FAIL [22m[49m src/test/AdminSEO.test.jsx[2m > [22mAdminSEO - Sitemap Tab[2m > [22mfetches sitemap on button click
+[31m[1mTestingLibraryElementError[22m: Unable to find an element with the text: ≡ƒù║ ┘å┘é╪┤┘ç ╪│╪º█î╪¬. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<div>[31m
+      [36m<div[31m
+        [33mstyle[31m=[32m"display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap;"[31m
+      [36m>[31m
+        [36m<button[31m
+          [33mstyle[31m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgb(212, 175, 55); background: rgba(212, 175, 55, 0.1); color: rgb(212, 175, 55); cursor: pointer; font-size: 12px; font-weight: 700; transition: all 0.2s;"[31m
+        [36m>[31m
+          [0m≡ƒôä ╪╡┘ü╪¡╪º╪¬[0m
+        [36m</button>[31m
+        [36m<button[31m
+          [33mstyle[31m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[31m
+        [36m>[31m
+          [0m≡ƒôè ┌»╪▓╪º╪▒╪┤[0m
+        [36m</button>[31m
+        [36m<button[31m
+          [33mstyle[31m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[31m
+        [36m>[31m
+          [0m≡ƒöº Schema[0m
+        [36m</button>[31m
+        [36m<button[31m
+          [33mstyle[31m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[31m
+        [36m>[31m
+          [0m≡ƒù║ Sitemap[0m
+        [36m</button>[31m
+        [36m<button[31m
+          [33mstyle[31m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[31m
+        [36m>[31m
+          [0m≡ƒöì ╪º╪│╪¬╪«╪▒╪º╪¼ ┌⌐┘ä┘à╪º╪¬[0m
+        [36m</button>[31m
+        [36m<button[31m
+          [33mstyle[31m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[31m
+        [36m>[31m
+          [0m≡ƒò╖ ╪«╪▓╪┤ ┘ê ╪▒┘é╪¿╪º[0m
+        [36m</button>[31m
+      [36m</div>[31m
+      [36m<div[31m
+        [33mstyle[31m=[32m"background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(212, 175, 55, 0.12); border-radius: 12px; padding: 24px; margin-bottom: 20px;"[31m
+      [36m>[31m
+        [36m<div[31m
+          [33mstyle[31m=[32m"display: flex; align-items: center; gap: 10px; margin-bottom: 4px;"[31m
+        [36m>[31m
+          [36m<div[31m
+            [33mstyle[31m=[32m"width: 3px; height: 20px; background: linear-gradient(180deg, rgb(212, 175, 55), rgb(160, 135, 43)); border-radius: 2px;"[31m
+          [36m/>[31m
+          [36m<h2[31m
+            [33mstyle[31m=[32m"color: rgb(245, 230, 200); font-size: 16px; font-weight: 700; margin: 0px;"[31m
+          [36m>[31m
+            [0m┘à╪»█î╪▒█î╪¬ SEO ╪╡┘ü╪¡╪º╪¬[0m
+          [36m</h2>[31m
+        [36m</div>[31m
+        [36m<p[31m
+          [33mstyle[31m=[32m"color: rgb(168, 152, 128); font-size: 12px; margin: 0px 0px 16px 13px;"[31m
+        [36m>[31m
+          [0m╪╣┘å┘ê╪º┘å╪î ╪¬┘ê╪╢█î╪¡╪º╪¬ ┘ê ┌⌐┘ä┘à╪º╪¬ ┌⌐┘ä█î╪»█î ┘ç╪▒ ╪╡┘ü╪¡┘ç ╪▒╪º ╪¿┘ç ╪╡┘ê╪▒╪¬ ┘à╪¼╪▓╪º ┘à╪»█î╪▒█î╪¬ ┌⌐┘å█î╪»[0m
+        [36m</p>[31m
+        [36m<div[31m
+          [33mstyle[31m=[32m"display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px;"[31m
+        [36m/>[31m
+        [36m<div[31m
+          [33mstyle[31m=[32m"margin-top: 16px; display: flex; gap: 8px; align-items: center;"[31m
+        [36m>[31m
+          [36m<button[31m
+            [33mstyle[31m=[32m"padding: 8px 20px; border-radius: 6px; border: medium; cursor: pointer; font-size: 12px; font-weight: 600; background: linear-gradient(135deg, rgb(212, 175, 55), rgb(160, 135, 43)); color: rgb(10, 10, 15);"[31m
+          [36m>[31m
+            [0m≡ƒÆ╛ ╪░╪«█î╪▒┘ç SEO[0m
+          [36m</button>[31m
+        [36m</div>[31m
+      [36m</div>[31m
+    [36m</div>[31m
+  [36m</div>[31m
+[36m</body>[31m[39m
+[90m [2mΓ¥»[22m Object.getElementError node_modules/@testing-library/dom/dist/config.js:[2m37:19[22m[39m
+[90m [2mΓ¥»[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m76:38[22m[39m
+[90m [2mΓ¥»[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m52:17[22m[39m
+[90m [2mΓ¥»[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m95:19[22m[39m
+[36m [2mΓ¥»[22m src/test/AdminSEO.test.jsx:[2m312:28[22m[39m
+    [90m310|[39m   [34mit[39m([32m'fetches sitemap on button click'[39m[33m,[39m [35masync[39m () [33m=>[39m {
+    [90m311|[39m     [34mrender[39m([33m<[39m[33mAdminSEO[39m [33m/[39m[33m>[39m)
+    [90m312|[39m     fireEvent[33m.[39m[34mclick[39m(screen[33m.[39m[34mgetByText[39m([32m'≡ƒù║ ┘å┘é╪┤┘ç ╪│╪º█î╪¬'[39m))
+    [90m   |[39m                            [31m^[39m
+    [90m313|[39m     await waitFor(() => expect(screen.getByText('≡ƒôé ╪»╪▒█î╪º┘ü╪¬ ╪ó╪«╪▒█î┘å ┘å╪│╪«┘ç'ΓÇª
+    [90m314|[39m     fireEvent[33m.[39m[34mclick[39m(screen[33m.[39m[34mgetByText[39m([32m'≡ƒôé ╪»╪▒█î╪º┘ü╪¬ ╪ó╪«╪▒█î┘å ┘å╪│╪«┘ç'[39m))
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[3/6]ΓÄ»[22m[39m
+
+[41m[1m FAIL [22m[49m src/test/AdminSEO.test.jsx[2m > [22mAdminSEO - Sitemap Tab[2m > [22mdisplays sitemap XML content
+[31m[1mTestingLibraryElementError[22m: Unable to find an element with the text: ≡ƒù║ ┘å┘é╪┤┘ç ╪│╪º█î╪¬. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<div>[31m
+      [36m<div[31m
+        [33mstyle[31m=[32m"display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap;"[31m
+      [36m>[31m
+        [36m<button[31m
+          [33mstyle[31m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgb(212, 175, 55); background: rgba(212, 175, 55, 0.1); color: rgb(212, 175, 55); cursor: pointer; font-size: 12px; font-weight: 700; transition: all 0.2s;"[31m
+        [36m>[31m
+          [0m≡ƒôä ╪╡┘ü╪¡╪º╪¬[0m
+        [36m</button>[31m
+        [36m<button[31m
+          [33mstyle[31m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[31m
+        [36m>[31m
+          [0m≡ƒôè ┌»╪▓╪º╪▒╪┤[0m
+        [36m</button>[31m
+        [36m<button[31m
+          [33mstyle[31m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[31m
+        [36m>[31m
+          [0m≡ƒöº Schema[0m
+        [36m</button>[31m
+        [36m<button[31m
+          [33mstyle[31m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[31m
+        [36m>[31m
+          [0m≡ƒù║ Sitemap[0m
+        [36m</button>[31m
+        [36m<button[31m
+          [33mstyle[31m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[31m
+        [36m>[31m
+          [0m≡ƒöì ╪º╪│╪¬╪«╪▒╪º╪¼ ┌⌐┘ä┘à╪º╪¬[0m
+        [36m</button>[31m
+        [36m<button[31m
+          [33mstyle[31m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[31m
+        [36m>[31m
+          [0m≡ƒò╖ ╪«╪▓╪┤ ┘ê ╪▒┘é╪¿╪º[0m
+        [36m</button>[31m
+      [36m</div>[31m
+      [36m<div[31m
+        [33mstyle[31m=[32m"background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(212, 175, 55, 0.12); border-radius: 12px; padding: 24px; margin-bottom: 20px;"[31m
+      [36m>[31m
+        [36m<div[31m
+          [33mstyle[31m=[32m"display: flex; align-items: center; gap: 10px; margin-bottom: 4px;"[31m
+        [36m>[31m
+          [36m<div[31m
+            [33mstyle[31m=[32m"width: 3px; height: 20px; background: linear-gradient(180deg, rgb(212, 175, 55), rgb(160, 135, 43)); border-radius: 2px;"[31m
+          [36m/>[31m
+          [36m<h2[31m
+            [33mstyle[31m=[32m"color: rgb(245, 230, 200); font-size: 16px; font-weight: 700; margin: 0px;"[31m
+          [36m>[31m
+            [0m┘à╪»█î╪▒█î╪¬ SEO ╪╡┘ü╪¡╪º╪¬[0m
+          [36m</h2>[31m
+        [36m</div>[31m
+        [36m<p[31m
+          [33mstyle[31m=[32m"color: rgb(168, 152, 128); font-size: 12px; margin: 0px 0px 16px 13px;"[31m
+        [36m>[31m
+          [0m╪╣┘å┘ê╪º┘å╪î ╪¬┘ê╪╢█î╪¡╪º╪¬ ┘ê ┌⌐┘ä┘à╪º╪¬ ┌⌐┘ä█î╪»█î ┘ç╪▒ ╪╡┘ü╪¡┘ç ╪▒╪º ╪¿┘ç ╪╡┘ê╪▒╪¬ ┘à╪¼╪▓╪º ┘à╪»█î╪▒█î╪¬ ┌⌐┘å█î╪»[0m
+        [36m</p>[31m
+        [36m<div[31m
+          [33mstyle[31m=[32m"display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px;"[31m
+        [36m/>[31m
+        [36m<div[31m
+          [33mstyle[31m=[32m"margin-top: 16px; display: flex; gap: 8px; align-items: center;"[31m
+        [36m>[31m
+          [36m<button[31m
+            [33mstyle[31m=[32m"padding: 8px 20px; border-radius: 6px; border: medium; cursor: pointer; font-size: 12px; font-weight: 600; background: linear-gradient(135deg, rgb(212, 175, 55), rgb(160, 135, 43)); color: rgb(10, 10, 15);"[31m
+          [36m>[31m
+            [0m≡ƒÆ╛ ╪░╪«█î╪▒┘ç SEO[0m
+          [36m</button>[31m
+        [36m</div>[31m
+      [36m</div>[31m
+    [36m</div>[31m
+  [36m</div>[31m
+[36m</body>[31m[39m
+[90m [2mΓ¥»[22m Object.getElementError node_modules/@testing-library/dom/dist/config.js:[2m37:19[22m[39m
+[90m [2mΓ¥»[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m76:38[22m[39m
+[90m [2mΓ¥»[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m52:17[22m[39m
+[90m [2mΓ¥»[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m95:19[22m[39m
+[36m [2mΓ¥»[22m src/test/AdminSEO.test.jsx:[2m323:28[22m[39m
+    [90m321|[39m   [34mit[39m([32m'displays sitemap XML content'[39m[33m,[39m [35masync[39m () [33m=>[39m {
+    [90m322|[39m     [34mrender[39m([33m<[39m[33mAdminSEO[39m [33m/[39m[33m>[39m)
+    [90m323|[39m     fireEvent[33m.[39m[34mclick[39m(screen[33m.[39m[34mgetByText[39m([32m'≡ƒù║ ┘å┘é╪┤┘ç ╪│╪º█î╪¬'[39m))
+    [90m   |[39m                            [31m^[39m
+    [90m324|[39m     await waitFor(() => expect(screen.getByText('≡ƒôé ╪»╪▒█î╪º┘ü╪¬ ╪ó╪«╪▒█î┘å ┘å╪│╪«┘ç'ΓÇª
+    [90m325|[39m     fireEvent[33m.[39m[34mclick[39m(screen[33m.[39m[34mgetByText[39m([32m'≡ƒôé ╪»╪▒█î╪º┘ü╪¬ ╪ó╪«╪▒█î┘å ┘å╪│╪«┘ç'[39m))
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[4/6]ΓÄ»[22m[39m
+
+[41m[1m FAIL [22m[49m src/test/AdminSEO.test.jsx[2m > [22mAdminSEO - Sitemap Tab[2m > [22mgenerates sitemap on click
+[31m[1mTestingLibraryElementError[22m: Unable to find an element with the text: ≡ƒù║ ┘å┘é╪┤┘ç ╪│╪º█î╪¬. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<div>[31m
+      [36m<div[31m
+        [33mstyle[31m=[32m"display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap;"[31m
+      [36m>[31m
+        [36m<button[31m
+          [33mstyle[31m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgb(212, 175, 55); background: rgba(212, 175, 55, 0.1); color: rgb(212, 175, 55); cursor: pointer; font-size: 12px; font-weight: 700; transition: all 0.2s;"[31m
+        [36m>[31m
+          [0m≡ƒôä ╪╡┘ü╪¡╪º╪¬[0m
+        [36m</button>[31m
+        [36m<button[31m
+          [33mstyle[31m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[31m
+        [36m>[31m
+          [0m≡ƒôè ┌»╪▓╪º╪▒╪┤[0m
+        [36m</button>[31m
+        [36m<button[31m
+          [33mstyle[31m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[31m
+        [36m>[31m
+          [0m≡ƒöº Schema[0m
+        [36m</button>[31m
+        [36m<button[31m
+          [33mstyle[31m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[31m
+        [36m>[31m
+          [0m≡ƒù║ Sitemap[0m
+        [36m</button>[31m
+        [36m<button[31m
+          [33mstyle[31m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[31m
+        [36m>[31m
+          [0m≡ƒöì ╪º╪│╪¬╪«╪▒╪º╪¼ ┌⌐┘ä┘à╪º╪¬[0m
+        [36m</button>[31m
+        [36m<button[31m
+          [33mstyle[31m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[31m
+        [36m>[31m
+          [0m≡ƒò╖ ╪«╪▓╪┤ ┘ê ╪▒┘é╪¿╪º[0m
+        [36m</button>[31m
+      [36m</div>[31m
+      [36m<div[31m
+        [33mstyle[31m=[32m"background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(212, 175, 55, 0.12); border-radius: 12px; padding: 24px; margin-bottom: 20px;"[31m
+      [36m>[31m
+        [36m<div[31m
+          [33mstyle[31m=[32m"display: flex; align-items: center; gap: 10px; margin-bottom: 4px;"[31m
+        [36m>[31m
+          [36m<div[31m
+            [33mstyle[31m=[32m"width: 3px; height: 20px; background: linear-gradient(180deg, rgb(212, 175, 55), rgb(160, 135, 43)); border-radius: 2px;"[31m
+          [36m/>[31m
+          [36m<h2[31m
+            [33mstyle[31m=[32m"color: rgb(245, 230, 200); font-size: 16px; font-weight: 700; margin: 0px;"[31m
+          [36m>[31m
+            [0m┘à╪»█î╪▒█î╪¬ SEO ╪╡┘ü╪¡╪º╪¬[0m
+          [36m</h2>[31m
+        [36m</div>[31m
+        [36m<p[31m
+          [33mstyle[31m=[32m"color: rgb(168, 152, 128); font-size: 12px; margin: 0px 0px 16px 13px;"[31m
+        [36m>[31m
+          [0m╪╣┘å┘ê╪º┘å╪î ╪¬┘ê╪╢█î╪¡╪º╪¬ ┘ê ┌⌐┘ä┘à╪º╪¬ ┌⌐┘ä█î╪»█î ┘ç╪▒ ╪╡┘ü╪¡┘ç ╪▒╪º ╪¿┘ç ╪╡┘ê╪▒╪¬ ┘à╪¼╪▓╪º ┘à╪»█î╪▒█î╪¬ ┌⌐┘å█î╪»[0m
+        [36m</p>[31m
+        [36m<div[31m
+          [33mstyle[31m=[32m"display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px;"[31m
+        [36m/>[31m
+        [36m<div[31m
+          [33mstyle[31m=[32m"margin-top: 16px; display: flex; gap: 8px; align-items: center;"[31m
+        [36m>[31m
+          [36m<button[31m
+            [33mstyle[31m=[32m"padding: 8px 20px; border-radius: 6px; border: medium; cursor: pointer; font-size: 12px; font-weight: 600; background: linear-gradient(135deg, rgb(212, 175, 55), rgb(160, 135, 43)); color: rgb(10, 10, 15);"[31m
+          [36m>[31m
+            [0m≡ƒÆ╛ ╪░╪«█î╪▒┘ç SEO[0m
+          [36m</button>[31m
+        [36m</div>[31m
+      [36m</div>[31m
+    [36m</div>[31m
+  [36m</div>[31m
+[36m</body>[31m[39m
+[90m [2mΓ¥»[22m Object.getElementError node_modules/@testing-library/dom/dist/config.js:[2m37:19[22m[39m
+[90m [2mΓ¥»[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m76:38[22m[39m
+[90m [2mΓ¥»[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m52:17[22m[39m
+[90m [2mΓ¥»[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m95:19[22m[39m
+[36m [2mΓ¥»[22m src/test/AdminSEO.test.jsx:[2m337:28[22m[39m
+    [90m335|[39m     })
+    [90m336|[39m     [34mrender[39m([33m<[39m[33mAdminSEO[39m [33m/[39m[33m>[39m)
+    [90m337|[39m     fireEvent[33m.[39m[34mclick[39m(screen[33m.[39m[34mgetByText[39m([32m'≡ƒù║ ┘å┘é╪┤┘ç ╪│╪º█î╪¬'[39m))
+    [90m   |[39m                            [31m^[39m
+    [90m338|[39m     await waitFor(() => expect(screen.getByText('≡ƒöä ╪¬┘ê┘ä█î╪» ┘å┘é╪┤┘ç ╪│╪º█î╪¬'))ΓÇª
+    [90m339|[39m     fireEvent[33m.[39m[34mclick[39m(screen[33m.[39m[34mgetByText[39m([32m'≡ƒöä ╪¬┘ê┘ä█î╪» ┘å┘é╪┤┘ç ╪│╪º█î╪¬'[39m))
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[5/6]ΓÄ»[22m[39m
+
+[41m[1m FAIL [22m[49m src/test/AdminSEO.test.jsx[2m > [22mAdminSEO - Sitemap Tab[2m > [22mshows error message on fetch failure
+[31m[1mTestingLibraryElementError[22m: Unable to find an element with the text: ≡ƒù║ ┘å┘é╪┤┘ç ╪│╪º█î╪¬. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<div>[31m
+      [36m<div[31m
+        [33mstyle[31m=[32m"display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap;"[31m
+      [36m>[31m
+        [36m<button[31m
+          [33mstyle[31m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgb(212, 175, 55); background: rgba(212, 175, 55, 0.1); color: rgb(212, 175, 55); cursor: pointer; font-size: 12px; font-weight: 700; transition: all 0.2s;"[31m
+        [36m>[31m
+          [0m≡ƒôä ╪╡┘ü╪¡╪º╪¬[0m
+        [36m</button>[31m
+        [36m<button[31m
+          [33mstyle[31m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[31m
+        [36m>[31m
+          [0m≡ƒôè ┌»╪▓╪º╪▒╪┤[0m
+        [36m</button>[31m
+        [36m<button[31m
+          [33mstyle[31m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[31m
+        [36m>[31m
+          [0m≡ƒöº Schema[0m
+        [36m</button>[31m
+        [36m<button[31m
+          [33mstyle[31m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[31m
+        [36m>[31m
+          [0m≡ƒù║ Sitemap[0m
+        [36m</button>[31m
+        [36m<button[31m
+          [33mstyle[31m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[31m
+        [36m>[31m
+          [0m≡ƒöì ╪º╪│╪¬╪«╪▒╪º╪¼ ┌⌐┘ä┘à╪º╪¬[0m
+        [36m</button>[31m
+        [36m<button[31m
+          [33mstyle[31m=[32m"padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.12); background: transparent; color: rgb(168, 152, 128); cursor: pointer; font-size: 12px; font-weight: 400; transition: all 0.2s;"[31m
+        [36m>[31m
+          [0m≡ƒò╖ ╪«╪▓╪┤ ┘ê ╪▒┘é╪¿╪º[0m
+        [36m</button>[31m
+      [36m</div>[31m
+      [36m<div[31m
+        [33mstyle[31m=[32m"background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(212, 175, 55, 0.12); border-radius: 12px; padding: 24px; margin-bottom: 20px;"[31m
+      [36m>[31m
+        [36m<div[31m
+          [33mstyle[31m=[32m"display: flex; align-items: center; gap: 10px; margin-bottom: 4px;"[31m
+        [36m>[31m
+          [36m<div[31m
+            [33mstyle[31m=[32m"width: 3px; height: 20px; background: linear-gradient(180deg, rgb(212, 175, 55), rgb(160, 135, 43)); border-radius: 2px;"[31m
+          [36m/>[31m
+          [36m<h2[31m
+            [33mstyle[31m=[32m"color: rgb(245, 230, 200); font-size: 16px; font-weight: 700; margin: 0px;"[31m
+          [36m>[31m
+            [0m┘à╪»█î╪▒█î╪¬ SEO ╪╡┘ü╪¡╪º╪¬[0m
+          [36m</h2>[31m
+        [36m</div>[31m
+        [36m<p[31m
+          [33mstyle[31m=[32m"color: rgb(168, 152, 128); font-size: 12px; margin: 0px 0px 16px 13px;"[31m
+        [36m>[31m
+          [0m╪╣┘å┘ê╪º┘å╪î ╪¬┘ê╪╢█î╪¡╪º╪¬ ┘ê ┌⌐┘ä┘à╪º╪¬ ┌⌐┘ä█î╪»█î ┘ç╪▒ ╪╡┘ü╪¡┘ç ╪▒╪º ╪¿┘ç ╪╡┘ê╪▒╪¬ ┘à╪¼╪▓╪º ┘à╪»█î╪▒█î╪¬ ┌⌐┘å█î╪»[0m
+        [36m</p>[31m
+        [36m<div[31m
+          [33mstyle[31m=[32m"display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px;"[31m
+        [36m/>[31m
+        [36m<div[31m
+          [33mstyle[31m=[32m"margin-top: 16px; display: flex; gap: 8px; align-items: center;"[31m
+        [36m>[31m
+          [36m<button[31m
+            [33mstyle[31m=[32m"padding: 8px 20px; border-radius: 6px; border: medium; cursor: pointer; font-size: 12px; font-weight: 600; background: linear-gradient(135deg, rgb(212, 175, 55), rgb(160, 135, 43)); color: rgb(10, 10, 15);"[31m
+          [36m>[31m
+            [0m≡ƒÆ╛ ╪░╪«█î╪▒┘ç SEO[0m
+          [36m</button>[31m
+        [36m</div>[31m
+      [36m</div>[31m
+    [36m</div>[31m
+  [36m</div>[31m
+[36m</body>[31m[39m
+[90m [2mΓ¥»[22m Object.getElementError node_modules/@testing-library/dom/dist/config.js:[2m37:19[22m[39m
+[90m [2mΓ¥»[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m76:38[22m[39m
+[90m [2mΓ¥»[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m52:17[22m[39m
+[90m [2mΓ¥»[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m95:19[22m[39m
+[36m [2mΓ¥»[22m src/test/AdminSEO.test.jsx:[2m349:28[22m[39m
+    [90m347|[39m     axios[33m.[39m[35mget[39m[33m.[39m[34mmockRejectedValueOnce[39m([35mnew[39m [33mError[39m([32m'fail'[39m))
+    [90m348|[39m     [34mrender[39m([33m<[39m[33mAdminSEO[39m [33m/[39m[33m>[39m)
+    [90m349|[39m     fireEvent[33m.[39m[34mclick[39m(screen[33m.[39m[34mgetByText[39m([32m'≡ƒù║ ┘å┘é╪┤┘ç ╪│╪º█î╪¬'[39m))
+    [90m   |[39m                            [31m^[39m
+    [90m350|[39m     await waitFor(() => expect(screen.getByText('≡ƒôé ╪»╪▒█î╪º┘ü╪¬ ╪ó╪«╪▒█î┘å ┘å╪│╪«┘ç'ΓÇª
+    [90m351|[39m     fireEvent[33m.[39m[34mclick[39m(screen[33m.[39m[34mgetByText[39m([32m'≡ƒôé ╪»╪▒█î╪º┘ü╪¬ ╪ó╪«╪▒█î┘å ┘å╪│╪«┘ç'[39m))
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[6/6]ΓÄ»[22m[39m
+
+
+[2m Test Files [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m5 passed[39m[22m[90m (6)[39m
+[2m      Tests [22m [1m[31m6 failed[39m[22m[2m | [22m[1m[32m123 passed[39m[22m[90m (129)[39m
+[2m   Start at [22m 15:46:02
+[2m   Duration [22m 4.01s[2m (transform 352ms, setup 510ms, import 779ms, tests 2.88s, environment 4.88s)[22m
+

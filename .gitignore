@@ -1,0 +1,52 @@
+﻿# Dependencies
+node_modules/
+vendor/
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# Build
+dist/
+build/
+*.egg-info/
+*.class
+*.o
+*.so
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Temp
+tmp/
+temp/
+*.tmp
+
+# Docker volumes (local data)
+.mysql/
+postgres/data/
+
+# Large binary files
+*.zip
+*.tar.gz
+*.7z
+*.rar
+*.mp4
+*.avi
+*.mov
+*.iso
+

@@ -1,0 +1,298 @@
+﻿
+> az-chob-iranian@1.0.0 test
+> vitest run
+
+[2m3:59:02 PM[22m [33m[1m[vite][22m[39m [33mwarning: `esbuild` option was specified by "vite:react-babel" plugin. This option is deprecated, please use `oxc` instead.[39m
+[2m3:59:02 PM[22m [33m[1m[vite][22m[39m [33mwarning: `optimizeDeps.esbuildOptions` option was specified by "vite:react-babel" plugin. This option is deprecated, please use `optimizeDeps.rolldownOptions` instead.[39m
+[33mBoth esbuild and oxc options were set. oxc options will be used and esbuild options will be ignored.[39m The following esbuild options were set: `{ jsx: 'automatic', jsxImportSource: undefined }`
+
+[1m[30m[46m RUN [49m[39m[22m [36mv4.1.8 [39m[90mH:/mobl/client[39m
+
+ [32mΓ£ô[39m src/test/Products.test.jsx [2m([22m[2m8 tests[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32mΓ£ô[39m src/test/helpers.test.js [2m([22m[2m16 tests[22m[2m)[22m[32m 6[2mms[22m[39m
+ [32mΓ£ô[39m src/test/seoBackend.test.js [2m([22m[2m28 tests[22m[2m)[22m[32m 12[2mms[22m[39m
+ [32mΓ£ô[39m src/test/useSEO.test.js [2m([22m[2m30 tests[22m[2m)[22m[32m 106[2mms[22m[39m
+ [32mΓ£ô[39m src/test/ConfirmModal.test.jsx [2m([22m[2m5 tests[22m[2m)[22m[32m 129[2mms[22m[39m
+ReferenceError: treeView is not defined
+    at H:/mobl/client/src/pages/admin/AdminSEO.jsx:513:15
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:520:7)
+    at renderWithHooks (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at updateFunctionComponent (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:19617:20)
+    at beginWork (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:21640:16)
+    at HTMLUnknownElement.callCallback (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (H:\mobl\client\node_modules\jsdom\lib\generated\idl\EventListener.js:26:30)
+    at innerInvokeEventListeners (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+ReferenceError: treeView is not defined
+    at H:/mobl/client/src/pages/admin/AdminSEO.jsx:513:15
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:520:7)
+    at renderWithHooks (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at updateFunctionComponent (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:19617:20)
+    at beginWork (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:21640:16)
+    at HTMLUnknownElement.callCallback (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (H:\mobl\client\node_modules\jsdom\lib\generated\idl\EventListener.js:26:30)
+    at innerInvokeEventListeners (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+[90mstderr[2m | src/test/AdminSEO.test.jsx[2m > [22m[2mAdminSEO - Tab Navigation[2m > [22m[2mswitches to sitemap tab on click
+[22m[39mThe above error occurred in the <AdminSEO> component:
+
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:221:58)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+[90mstderr[2m | src/test/AdminSEO.test.jsx[2m > [22m[2mAdminSEO - Report Tab[2m > [22m[2mshows loading text when no report yet
+[22m[39mWarning: An update to AdminSEO inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:221:58)
+
+ReferenceError: treeView is not defined
+    at H:/mobl/client/src/pages/admin/AdminSEO.jsx:513:15
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:520:7)
+    at renderWithHooks (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at updateFunctionComponent (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:19617:20)
+    at beginWork (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:21640:16)
+    at HTMLUnknownElement.callCallback (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (H:\mobl\client\node_modules\jsdom\lib\generated\idl\EventListener.js:26:30)
+    at innerInvokeEventListeners (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+ReferenceError: treeView is not defined
+    at H:/mobl/client/src/pages/admin/AdminSEO.jsx:513:15
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:520:7)
+    at renderWithHooks (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at updateFunctionComponent (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:19617:20)
+    at beginWork (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:21640:16)
+    at HTMLUnknownElement.callCallback (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (H:\mobl\client\node_modules\jsdom\lib\generated\idl\EventListener.js:26:30)
+    at innerInvokeEventListeners (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+[90mstderr[2m | src/test/AdminSEO.test.jsx[2m > [22m[2mAdminSEO - Sitemap Tab[2m > [22m[2mfetches sitemap on button click
+[22m[39mThe above error occurred in the <AdminSEO> component:
+
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:221:58)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+ReferenceError: treeView is not defined
+    at H:/mobl/client/src/pages/admin/AdminSEO.jsx:513:15
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:520:7)
+    at renderWithHooks (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at updateFunctionComponent (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:19617:20)
+    at beginWork (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:21640:16)
+    at HTMLUnknownElement.callCallback (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (H:\mobl\client\node_modules\jsdom\lib\generated\idl\EventListener.js:26:30)
+    at innerInvokeEventListeners (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+ReferenceError: treeView is not defined
+    at H:/mobl/client/src/pages/admin/AdminSEO.jsx:513:15
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:520:7)
+    at renderWithHooks (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at updateFunctionComponent (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:19617:20)
+    at beginWork (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:21640:16)
+    at HTMLUnknownElement.callCallback (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (H:\mobl\client\node_modules\jsdom\lib\generated\idl\EventListener.js:26:30)
+    at innerInvokeEventListeners (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+[90mstderr[2m | src/test/AdminSEO.test.jsx[2m > [22m[2mAdminSEO - Sitemap Tab[2m > [22m[2mdisplays sitemap XML content
+[22m[39mThe above error occurred in the <AdminSEO> component:
+
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:221:58)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+ReferenceError: treeView is not defined
+    at H:/mobl/client/src/pages/admin/AdminSEO.jsx:513:15
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:520:7)
+    at renderWithHooks (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at updateFunctionComponent (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:19617:20)
+    at beginWork (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:21640:16)
+    at HTMLUnknownElement.callCallback (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (H:\mobl\client\node_modules\jsdom\lib\generated\idl\EventListener.js:26:30)
+    at innerInvokeEventListeners (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+ReferenceError: treeView is not defined
+    at H:/mobl/client/src/pages/admin/AdminSEO.jsx:513:15
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:520:7)
+    at renderWithHooks (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at updateFunctionComponent (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:19617:20)
+    at beginWork (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:21640:16)
+    at HTMLUnknownElement.callCallback (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (H:\mobl\client\node_modules\jsdom\lib\generated\idl\EventListener.js:26:30)
+    at innerInvokeEventListeners (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+[90mstderr[2m | src/test/AdminSEO.test.jsx[2m > [22m[2mAdminSEO - Sitemap Tab[2m > [22m[2mgenerates sitemap on click
+[22m[39mThe above error occurred in the <AdminSEO> component:
+
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:221:58)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+ReferenceError: treeView is not defined
+    at H:/mobl/client/src/pages/admin/AdminSEO.jsx:513:15
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:520:7)
+    at renderWithHooks (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at updateFunctionComponent (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:19617:20)
+    at beginWork (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:21640:16)
+    at HTMLUnknownElement.callCallback (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (H:\mobl\client\node_modules\jsdom\lib\generated\idl\EventListener.js:26:30)
+    at innerInvokeEventListeners (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+ReferenceError: treeView is not defined
+    at H:/mobl/client/src/pages/admin/AdminSEO.jsx:513:15
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:520:7)
+    at renderWithHooks (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at updateFunctionComponent (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:19617:20)
+    at beginWork (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:21640:16)
+    at HTMLUnknownElement.callCallback (H:\mobl\client\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (H:\mobl\client\node_modules\jsdom\lib\generated\idl\EventListener.js:26:30)
+    at innerInvokeEventListeners (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (H:\mobl\client\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+[90mstderr[2m | src/test/AdminSEO.test.jsx[2m > [22m[2mAdminSEO - Sitemap Tab[2m > [22m[2mshows error message on fetch failure
+[22m[39mThe above error occurred in the <AdminSEO> component:
+
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:221:58)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+[90mstderr[2m | src/test/AdminSEO.test.jsx[2m > [22m[2mAdminSEO - Extract Tab[2m > [22m[2menables extract button when URL is entered
+[22m[39mWarning: An update to AdminSEO inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:221:58)
+Warning: An update to AdminSEO inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:221:58)
+
+[90mstderr[2m | src/test/AdminSEO.test.jsx[2m > [22m[2mAdminSEO - Section Component[2m > [22m[2mrenders section title
+[22m[39mWarning: An update to AdminSEO inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:221:58)
+Warning: An update to AdminSEO inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at AdminSEO (H:/mobl/client/src/pages/admin/AdminSEO.jsx:221:58)
+
+ [31mΓ¥»[39m src/test/AdminSEO.test.jsx [2m([22m[2m42 tests[22m[2m | [22m[31m5 failed[39m[2m)[22m[33m 1848[2mms[22m[39m
+     [32mΓ£ô[39m renders all 6 tab buttons[32m 190[2mms[22m[39m
+     [32mΓ£ô[39m defaults to pages tab[32m 52[2mms[22m[39m
+     [32mΓ£ô[39m switches to report tab on click[32m 72[2mms[22m[39m
+     [32mΓ£ô[39m switches to schema tab on click[32m 65[2mms[22m[39m
+[31m     [31m├ù[31m switches to sitemap tab on click[39m[32m 67[2mms[22m[39m
+     [32mΓ£ô[39m switches to extract tab on click[32m 71[2mms[22m[39m
+     [32mΓ£ô[39m fetches and displays all page cards from API[32m 78[2mms[22m[39m
+     [32mΓ£ô[39m shows page paths on cards[32m 51[2mms[22m[39m
+     [32mΓ£ô[39m renders title input fields[32m 46[2mms[22m[39m
+     [32mΓ£ô[39m shows preview with page title[32m 49[2mms[22m[39m
+     [32mΓ£ô[39m updates input fields on change[32m 67[2mms[22m[39m
+     [32mΓ£ô[39m calls save API when save button clicked[32m 63[2mms[22m[39m
+     [32mΓ£ô[39m shows loading state on save[32m 50[2mms[22m[39m
+     [32mΓ£ô[39m shows saved confirmation after save[32m 60[2mms[22m[39m
+     [32mΓ£ô[39m fetches report on mount[32m 39[2mms[22m[39m
+     [32mΓ£ô[39m displays report data[32m 68[2mms[22m[39m
+     [32mΓ£ô[39m shows issue counts[32m 18[2mms[22m[39m
+     [32mΓ£ô[39m shows content type counts[32m 19[2mms[22m[39m
+     [32mΓ£ô[39m refreshes report on button click[32m 16[2mms[22m[39m
+     [32mΓ£ô[39m shows loading text when no report yet[32m 11[2mms[22m[39m
+     [32mΓ£ô[39m loads schema when ╪¿╪º╪▒┌»╪░╪º╪▒█î button is clicked[32m 20[2mms[22m[39m
+     [32mΓ£ô[39m displays schema JSON in textarea after loading[32m 15[2mms[22m[39m
+     [32mΓ£ô[39m saves schema on button click after loading[32m 21[2mms[22m[39m
+     [32mΓ£ô[39m shows alert on invalid JSON[32m 36[2mms[22m[39m
+     [32mΓ£ô[39m loads schema fresh on ╪¿╪º╪▒┌»╪░╪º╪▒█î button click[32m 33[2mms[22m[39m
+[31m     [31m├ù[31m fetches sitemap on button click[39m[32m 14[2mms[22m[39m
+[31m     [31m├ù[31m displays sitemap XML content[39m[32m 9[2mms[22m[39m
+[31m     [31m├ù[31m generates sitemap on click[39m[32m 13[2mms[22m[39m
+[31m     [31m├ù[31m shows error message on fetch failure[39m[32m 11[2mms[22m[39m
+     [32mΓ£ô[39m renders URL input[32m 16[2mms[22m[39m
+     [32mΓ£ô[39m disables extract button when URL is empty[32m 17[2mms[22m[39m
+     [32mΓ£ô[39m enables extract button when URL is entered[32m 16[2mms[22m[39m
+     [32mΓ£ô[39m calls extract API on button click[32m 24[2mms[22m[39m
+     [32mΓ£ô[39m displays extracted title[32m 29[2mms[22m[39m
+     [32mΓ£ô[39m displays extracted description[32m 22[2mms[22m[39m
+     [32mΓ£ô[39m displays extracted keywords[32m 24[2mms[22m[39m
+     [32mΓ£ô[39m shows error when extract fails[32m 28[2mms[22m[39m
+     [32mΓ£ô[39m handles pages fetch error gracefully[32m 13[2mms[22m[39m
+     [32mΓ£ô[39m handles report fetch error gracefully[32m 24[2mms[22m[39m
+     [32mΓ£ô[39m handles save error gracefully[32m 69[2mms[22m[39m
+     [32mΓ£ô[39m renders section title[32m 40[2mms[22m[39m
+     [32mΓ£ô[39m renders text inputs[32m 199[2mms[22m[39m
+
+[31mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[39m[1m[41m Failed Tests 5 [49m[22m[31mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[39m
+
+[41m[1m FAIL [22m[49m src/test/AdminSEO.test.jsx[2m > [22mAdminSEO - Tab Navigation[2m > [22mswitches to sitemap tab on click
+[41m[1m FAIL [22m[49m src/test/AdminSEO.test.jsx[2m > [22mAdminSEO - Sitemap Tab[2m > [22mfetches sitemap on button click
+[41m[1m FAIL [22m[49m src/test/AdminSEO.test.jsx[2m > [22mAdminSEO - Sitemap Tab[2m > [22mdisplays sitemap XML content
+[41m[1m FAIL [22m[49m src/test/AdminSEO.test.jsx[2m > [22mAdminSEO - Sitemap Tab[2m > [22mgenerates sitemap on click
+[41m[1m FAIL [22m[49m src/test/AdminSEO.test.jsx[2m > [22mAdminSEO - Sitemap Tab[2m > [22mshows error message on fetch failure
+[31m[1mReferenceError[22m: treeView is not defined[39m
+[36m [2mΓ¥»[22m src/pages/admin/AdminSEO.jsx:[2m513:15[22m[39m
+
+[90m [2mΓ¥»[22m AdminSEO src/pages/admin/AdminSEO.jsx:[2m520:7[22m[39m
+[90m [2mΓ¥»[22m renderWithHooks node_modules/react-dom/cjs/react-dom.development.js:[2m15486:18[22m[39m
+[90m [2mΓ¥»[22m updateFunctionComponent node_modules/react-dom/cjs/react-dom.development.js:[2m19617:20[22m[39m
+[90m [2mΓ¥»[22m beginWork node_modules/react-dom/cjs/react-dom.development.js:[2m21640:16[22m[39m
+[90m [2mΓ¥»[22m beginWork$1 node_modules/react-dom/cjs/react-dom.development.js:[2m27465:14[22m[39m
+[90m [2mΓ¥»[22m performUnitOfWork node_modules/react-dom/cjs/react-dom.development.js:[2m26599:12[22m[39m
+[90m [2mΓ¥»[22m workLoopSync node_modules/react-dom/cjs/react-dom.development.js:[2m26505:5[22m[39m
+[90m [2mΓ¥»[22m renderRootSync node_modules/react-dom/cjs/react-dom.development.js:[2m26473:7[22m[39m
+[90m [2mΓ¥»[22m recoverFromConcurrentError node_modules/react-dom/cjs/react-dom.development.js:[2m25889:20[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[1/5]ΓÄ»[22m[39m
+
+
+[2m Test Files [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m5 passed[39m[22m[90m (6)[39m
+[2m      Tests [22m [1m[31m5 failed[39m[22m[2m | [22m[1m[32m124 passed[39m[22m[90m (129)[39m
+[2m   Start at [22m 15:59:02
+[2m   Duration [22m 3.38s[2m (transform 430ms, setup 547ms, import 872ms, tests 2.11s, environment 5.61s)[22m
+

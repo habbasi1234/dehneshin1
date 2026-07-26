@@ -1,0 +1,2 @@
+const u = db.users.findOne({username:"admin"})
+print(JSON.stringify({role: u.role, pwdStart: (u.password || "").substring(0, 30)}))
