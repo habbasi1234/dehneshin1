@@ -40,6 +40,17 @@ temp/
 .mysql/
 postgres/data/
 
+# Uploads & local data
+server/uploads/
+server/data/
+server/logs/
+
+# Test outputs
+test_*.txt
+
+# Large archives
+dehnesin.rar
+
 # Large binary files
 *.zip
 *.tar.gz
