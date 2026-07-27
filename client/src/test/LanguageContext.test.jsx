@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import React from 'react'
-import { render, screen } from '@testing-library/react'
+import { render, screen, act } from '@testing-library/react'
 
 vi.mock('axios', () => ({
   default: { get: vi.fn(() => Promise.resolve({ data: {} })), put: vi.fn(() => Promise.resolve({ data: {} })) }
@@ -135,7 +135,9 @@ describe('LanguageProvider', () => {
       </LanguageProvider>
     )
     expect(langValue).toBe('fa')
-    screen.getByText('switch').click()
+    act(() => {
+      screen.getByText('switch').click()
+    })
     expect(langValue).toBe('en')
   })
 

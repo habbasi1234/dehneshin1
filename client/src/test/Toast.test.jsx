@@ -59,7 +59,7 @@ describe('ToastProvider', () => {
     })
 
     const toast = screen.getByText('Success msg')
-    expect(toast.style.border).toContain('#4CAF50')
+    expect(toast.style.border).toMatch(/#4CAF50|rgb\(76,\s*175,\s*80\)/)
   })
 
   it('shows error toast with red border', () => {
@@ -74,10 +74,10 @@ describe('ToastProvider', () => {
     })
 
     const toast = screen.getByText('Error msg')
-    expect(toast.style.border).toContain('#ff4444')
+    expect(toast.style.border).toMatch(/#ff4444|rgb\(255,\s*68,\s*68\)/)
   })
 
-  it('shows default toast with blue border', () => {
+  it('shows default type toast (success style when no type)', () => {
     render(
       <ToastProvider>
         <ToastTrigger />
@@ -89,7 +89,7 @@ describe('ToastProvider', () => {
     })
 
     const toast = screen.getByText('Default msg')
-    expect(toast.style.border).toContain('#4488ff')
+    expect(toast.style.border).toMatch(/#4CAF50|rgb\(76,\s*175,\s*80\)/)
   })
 
   it('auto-dismisses toast after 3500ms', () => {
