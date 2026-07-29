@@ -121,7 +121,12 @@ app.use('/data', express.static(join(__dirname, '..', 'data'), {
   }
 }))
 
-app.use(express.static(join(__dirname, '..', 'client', 'dist'), {
+const distPath = join(__dirname, '..', 'client', 'dist')
+console.log('[startup] distPath:', distPath)
+console.log('[startup] dist exists:', existsSync(distPath))
+console.log('[startup] index.html exists:', existsSync(join(distPath, 'index.html')))
+
+app.use(express.static(distPath, {
   setHeaders: (res, path) => {
     if (path.endsWith('.html')) res.setHeader('Content-Type', 'text/html; charset=utf-8')
   }
@@ -239,7 +244,13 @@ app.get('/sitemap.xml', async (req, res) => {
 })
 
 app.get('*', (req, res) => {
-  res.sendFile(join(__dirname, '..', 'client', 'dist', 'index.html'))
+  const indexPath = join(__dirname, '..', 'client', 'dist', 'index.html')
+  res.sendFile(indexPath, (err) => {
+    if (err) {
+      console.error('sendFile error:', err.message)
+      res.status(200).type('html').send('<!DOCTYPE html><html lang="fa" dir="rtl"><head><meta charset="UTF-8"><title>ده نشین</title></head><body style="background:#F5F0E8;font-family:sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;margin:0"><h1 style="color:#5a7a3a">ده نشین | محصولات ارگانیک</h1><p style="color:#666">سایت در حال راه‌اندازی است</p></body></html>')
+    }
+  })
 })
 
 app.use((err, req, res, next) => {
