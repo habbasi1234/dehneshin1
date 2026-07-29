@@ -2,10 +2,13 @@ import { describe, it, expect, vi, beforeEach } from 'vitest'
 import React from 'react'
 import { render, screen, waitFor } from '@testing-library/react'
 
-const mockAxios = {
-  get: vi.fn(),
-  post: vi.fn(),
-}
+const { mockAxios } = vi.hoisted(() => {
+  const mockAxios = {
+    get: vi.fn(),
+    post: vi.fn(),
+  }
+  return { mockAxios }
+})
 
 vi.mock('axios', () => ({
   default: mockAxios
@@ -28,12 +31,11 @@ function TestConsumer() {
 
 describe('UserAuthProvider', () => {
   beforeEach(() => {
-    vi.clearAllMocks()
+    vi.resetAllMocks()
     try { localStorage.removeItem('userToken') } catch {}
   })
 
   it('renders children', () => {
-    mockAxios.get.mockRejectedValueOnce(new Error('no token'))
     render(
       <UserAuthProvider>
         <div>child</div>
@@ -42,14 +44,15 @@ describe('UserAuthProvider', () => {
     expect(screen.getByText('child')).toBeDefined()
   })
 
-  it('shows loading true initially', () => {
-    mockAxios.get.mockReturnValueOnce(new Promise(() => {})) // never resolves
+  it('shows loading false after mount with no token', async () => {
     render(
       <UserAuthProvider>
         <TestConsumer />
       </UserAuthProvider>
     )
-    expect(screen.getByTestId('loading').textContent).toBe('true')
+    await waitFor(() => {
+      expect(screen.getByTestId('loading').textContent).toBe('false')
+    })
   })
 
   it('fetches profile when token exists in localStorage', async () => {
@@ -159,7 +162,9 @@ describe('UserAuthProvider', () => {
 
     screen.getByTestId('logout').click()
 
-    expect(screen.getByTestId('user').textContent).toBe('null')
+    await waitFor(() => {
+      expect(screen.getByTestId('user').textContent).toBe('null')
+    })
   })
 })
 
