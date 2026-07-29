@@ -23,6 +23,7 @@ import activityRoutes from './routes/activity.js'
 import seoRoutes from './routes/seo.js'
 import { connectDB } from './db.js'
 import { initTransporter } from './services/notifier.js'
+import User from './models/User.js'
 
 dotenv.config()
 
@@ -266,6 +267,17 @@ app.use((err, req, res, next) => {
 
 app.listen(PORT, async () => {
   await connectDB()
+  try {
+    const existing = await User.findOne({ username: 'admin' }).lean()
+    if (!existing) {
+      await User.create({ id: 1, username: 'admin', password: 'dehnesin@1404', role: 'admin', name: 'مدیر سیستم' })
+      console.log('✅ Default admin user created (admin / dehnesin@1404)')
+    } else {
+      console.log('✅ Admin user already exists')
+    }
+  } catch (e) {
+    console.log('⚠️ Could not create admin user:', e.message)
+  }
   console.log(`Server running on port ${PORT}`)
   const webUrl = await initTransporter()
 })
