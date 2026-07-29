@@ -140,7 +140,7 @@ const defaults = {
   showHeroButtons: true,
   banners: [{ image: '', title: 'ده نشین', subtitle: 'محصولات ارگانیک · تازه و طبیعی', link: '/products', active: true }],
   themes: { active: 'royal-gold', available: [] },
-  otpEnabled: true, otpLength: 5, otpExpiry: 180, otpMaxAttempts: 3,
+  otpEnabled: false, otpLength: 5, otpExpiry: 180, otpMaxAttempts: 3,
   smsProviders: [{ id: 'default', name: 'sms.ir اصلی', enabled: true, forOTP: true, forNotification: true, apiKey: '', lineNumber: '', templateId: '', apiBaseUrl: 'https://api.sms.ir/v1' }],
   testimonials: [
     { image: '', text: 'خیارهای ارگانیک ده نشین واقعاً طعم خیارهای باغ مادربزرگمو داره. بعد سال‌ها دوباره طعم واقعی خیار رو چشیدم!', name: 'خانواده احمدی', role: 'مشتری وفادار' },
