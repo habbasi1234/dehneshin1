@@ -40,6 +40,13 @@ temp/
 .mysql/
 postgres/data/
 
+# Android build outputs
+android/.gradle/
+android/app/build/
+android/local.properties
+*.apk
+*.aab
+
 # Uploads & local data
 server/uploads/
 server/data/
