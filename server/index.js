@@ -122,8 +122,8 @@ app.use('/data', express.static(join(__dirname, '..', 'data'), {
 }))
 
 app.use(express.static(join(__dirname, '..', 'client', 'dist'), {
-  setHeaders: (res) => {
-    res.setHeader('Content-Type', 'text/html; charset=utf-8')
+  setHeaders: (res, path) => {
+    if (path.endsWith('.html')) res.setHeader('Content-Type', 'text/html; charset=utf-8')
   }
 }))
 
