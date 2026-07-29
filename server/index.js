@@ -63,7 +63,6 @@ app.use(cors({
 }))
 
 app.use((req, res, next) => {
-  res.setHeader('Content-Type', 'application/json; charset=utf-8')
   res.setHeader('X-Content-Type-Options', 'nosniff')
   res.setHeader('X-Frame-Options', 'DENY')
   res.setHeader('X-XSS-Protection', '0')
