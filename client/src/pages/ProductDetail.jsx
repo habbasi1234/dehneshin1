@@ -172,13 +172,24 @@ export default function ProductDetail() {
 
   return (
     <div className="page-bg" style={{ paddingTop: '70px', background: '#F5F0E8', minHeight: '100vh' }}>
+      <style>{`
+        @media (max-width: 768px) {
+          .pd-grid { grid-template-columns: 1fr !important; gap: 30px !important; }
+          .pd-grid h1 { font-size: 1.8rem !important; }
+          .pd-grid .features-grid { grid-template-columns: 1fr !important; }
+        }
+        @media (max-width: 480px) {
+          .pd-grid h1 { font-size: 1.4rem !important; }
+          .pd-grid .qty-btn { width: 32px !important; height: 32px !important; }
+        }
+      `}</style>
       <section className="section-padding">
         <div className="container">
           <Link to="/products" style={{ color: '#4CAF50', marginBottom: '30px', display: 'inline-block' }}>
             ← بازگشت به محصولات
           </Link>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '60px', marginTop: '20px' }}>
+          <div className="pd-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '60px', marginTop: '20px' }}>
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
@@ -244,7 +255,7 @@ export default function ProductDetail() {
               {features.length > 0 && (
                 <div style={{ marginBottom: 24 }}>
                   <p style={{ color: '#2D2D2D', fontSize: '0.9rem', marginBottom: 10, fontWeight: 700 }}>مشخصات محصول</p>
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4px 16px' }}>
+                  <div className="features-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4px 16px' }}>
                     {features.slice(0, showAllFeatures ? features.length : initialShow).map((feat, i) => (
                       <div key={i} style={{ display: 'flex', justifyContent: 'space-between', padding: '6px 0', borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
                         <span style={{ color: '#6B6B6B', fontSize: 13 }}>{feat.key}</span>

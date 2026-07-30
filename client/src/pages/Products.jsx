@@ -106,6 +106,26 @@ export default function Products() {
 
   return (
     <div style={{ paddingTop: '70px' }}>
+      <style>{`
+        @media (max-width: 768px) {
+          .products-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)) !important; gap: 12px !important; }
+          .products-grid .card-img { height: 140px !important; }
+          .products-grid .card-body { padding: 10px !important; }
+          .products-grid .card-body h3 { font-size: 0.8rem !important; }
+          .products-grid .card-body p { font-size: 0.65rem !important; }
+          .products-grid .card-body button { font-size: 11px !important; padding: 6px !important; }
+          .products-categories { gap: 6px !important; }
+          .products-categories button { font-size: 0.7rem !important; padding: 4px 12px !important; }
+        }
+        @media (max-width: 480px) {
+          .products-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 8px !important; }
+          .products-grid .card-img { height: 120px !important; }
+        }
+        @media (max-width: 360px) {
+          .products-grid { grid-template-columns: 1fr 1fr !important; }
+          .products-grid .card-img { height: 100px !important; }
+        }
+      `}</style>
       <section className="section-padding" style={{ background: '#F5F0E8', minHeight: '100vh' }}>
         <div className="container">
           <ScrollReveal>
@@ -140,7 +160,7 @@ export default function Products() {
                 }}>🔍</span>
               </div>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'center', gap: '10px', marginBottom: '40px', flexWrap: 'wrap' }}>
+            <div className="products-categories" style={{ display: 'flex', justifyContent: 'center', gap: '10px', marginBottom: '40px', flexWrap: 'wrap' }}>
               {categories.map(cat => (
                 <button
                   key={cat.slug}
@@ -168,7 +188,7 @@ export default function Products() {
               در حال بارگذاری...
             </div>
           ) : (
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '20px' }}>
+            <div className="products-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '20px' }}>
               <AnimatePresence mode="popLayout">
                 {products.filter(p => {
                   if (!search.trim()) return true
@@ -199,7 +219,7 @@ export default function Products() {
                             boxShadow: '0 1px 4px rgba(0,0,0,0.04)',
                           }}
                         >
-                          <div style={{
+                          <div className="card-img" style={{
                             height: 200, position: 'relative', overflow: 'hidden',
                             background: 'linear-gradient(135deg, #f5f0e8, #e8e0d8)',
                           }}>
@@ -252,7 +272,7 @@ export default function Products() {
                               </div>
                             )}
                           </div>
-                          <div style={{ padding: '12px' }}>
+                          <div className="card-body" style={{ padding: '12px' }}>
                             <h3 style={{
                               color: '#2D2D2D', fontSize: '0.85rem', marginBottom: '4px',
                               fontWeight: 600, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis',

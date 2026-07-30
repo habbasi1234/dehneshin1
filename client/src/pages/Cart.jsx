@@ -262,10 +262,28 @@ export default function Cart() {
 
   return (
     <div style={{ paddingTop: '70px', minHeight: '100vh', background: '#F5F0E8' }}>
+      <style>{`
+        @media (max-width: 768px) {
+          .cart-layout { grid-template-columns: 1fr !important; }
+          .cart-layout .cart-sidebar { position: static !important; }
+          .cart-form-grid { grid-template-columns: 1fr !important; }
+          .cart-suggest-grid { grid-template-columns: repeat(2, 1fr) !important; }
+          .cart-trust-badges { gap: 8px !important; padding: 12px !important; }
+          .cart-trust-badges > div { padding: 0 6px !important; }
+          .cart-item { flex-wrap: wrap !important; }
+          .cart-item-img { width: 60px !important; height: 60px !important; }
+          .cart-section-title { font-size: 1.6rem !important; }
+        }
+        @media (max-width: 480px) {
+          .cart-item-qty { width: 100% !important; justify-content: flex-start !important; margin-top: 8px !important; }
+          .cart-suggest-grid { grid-template-columns: 1fr 1fr !important; gap: 8px !important; }
+          .cart-layout { gap: 16px !important; }
+        }
+      `}</style>
       <section className="section-padding">
         <div className="container">
           <ScrollReveal>
-            <h1 className="section-title" style={{ fontSize: '2rem', color: '#2D2D2D' }}>سبد خرید</h1>
+            <h1 className="section-title cart-section-title" style={{ fontSize: '2rem', color: '#2D2D2D' }}>سبد خرید</h1>
             <p className="section-subtitle" style={{ color: '#6B6B6B', marginBottom: 40 }}>
               {cart.length > 0 ? `${totalItems} عدد محصول در سبد خرید شما` : 'محصولات انتخاب شده خود را بررسی و سفارش دهید'}
             </p>
@@ -295,6 +313,7 @@ export default function Cart() {
             <>
               {/* Trust Badges */}
               <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }}
+                className="cart-trust-badges"
                 style={{
                   display: 'flex', gap: 16, marginBottom: 32, flexWrap: 'wrap',
                   background: '#FFFFFF', borderRadius: 14, padding: '16px 24px',
@@ -311,7 +330,7 @@ export default function Cart() {
                 ))}
               </motion.div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 380px', gap: 32, alignItems: 'start' }}>
+              <div className="cart-layout" style={{ display: 'grid', gridTemplateColumns: '1fr 380px', gap: 32, alignItems: 'start' }}>
                 {/* Left Column */}
                 <div>
                   {/* Cart Items */}
@@ -335,6 +354,7 @@ export default function Cart() {
                         const hasSale = !!(item.originalPrice) || (parsePrice(p?.salePrice) > 0)
                         return (
                         <motion.div key={item.cartKey || item.productId} layout
+                          className="cart-item"
                           initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 20 }}
                           style={{
                             display: 'flex', gap: 16, padding: '16px 0',
@@ -343,9 +363,9 @@ export default function Cart() {
                           }}>
                           {img ? (
                             <img src={img} alt="" onError={e => { e.target.style.display = 'none' }}
-                              style={{ width: 90, height: 90, borderRadius: 12, objectFit: 'cover', flexShrink: 0 }} />
+                              className="cart-item-img" style={{ width: 90, height: 90, borderRadius: 12, objectFit: 'cover', flexShrink: 0 }} />
                           ) : (
-                            <div style={{
+                            <div className="cart-item-img" style={{
                               width: 90, height: 90, borderRadius: 12,
                               background: 'linear-gradient(135deg, #E8F5E9, #C8E6C9)',
                               display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 36, flexShrink: 0,
@@ -377,7 +397,7 @@ export default function Cart() {
                               </div>
                             )}
                           </div>
-                          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                          <div className="cart-item-qty" style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
                             <div style={{
                               display: 'flex', alignItems: 'center', gap: 4,
                               background: '#F5F0E8', borderRadius: 8, padding: '2px',
@@ -419,7 +439,7 @@ export default function Cart() {
                       <span style={{ fontSize: 20 }}>📋</span>
                       <h3 style={{ color: '#2D2D2D', fontSize: 16, margin: 0, fontWeight: 700 }}>اطلاعات دریافت‌کننده</h3>
                     </div>
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+                    <div className="cart-form-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
                       <div style={inputWrap()}>
                         <span style={{ position: 'absolute', right: 12, top: '50%', transform: 'translateY(-50%)', fontSize: 16, zIndex: 1, opacity: 0.5 }}>👤</span>
                         <input value={form.name} onChange={e => hc('name', e.target.value)} placeholder="نام و نام خانوادگی *" style={inputStyle()} />
@@ -506,7 +526,7 @@ export default function Cart() {
                         <span style={{ fontSize: 20 }}>🔥</span>
                         <h3 style={{ color: '#2D2D2D', fontSize: 16, margin: 0, fontWeight: 700 }}>محصولات پیشنهادی</h3>
                       </div>
-                      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 12 }}>
+                      <div className="cart-suggest-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 12 }}>
                         {suggestedProducts.map((p) => {
                           const saleP = parsePrice(p?.salePrice)
                           const origP = parsePrice(p?.price)
@@ -543,7 +563,7 @@ export default function Cart() {
                 </div>
 
                 {/* Right Column - Order Summary */}
-                <div style={{ position: 'sticky', top: 100 }}>
+                <div className="cart-sidebar" style={{ position: 'sticky', top: 100 }}>
                   <div style={{
                     background: '#FFFFFF', borderRadius: 16, padding: 24,
                     border: '1px solid #E8E4DC', marginBottom: 16,
