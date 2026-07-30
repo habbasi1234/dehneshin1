@@ -20,6 +20,32 @@ const searchableProducts = [
   { id: 10, type: 'product', url: '/products/10', title: 'روغن زیتون فرابکر', description: 'روغن زیتون فرابکر رودبار، درجه یک', category: 'beverages', tags: ['روغن', 'زیتون', 'olive', 'oil'] },
   { id: 11, type: 'product', url: '/products/11', title: 'انار ارگانیک', description: 'انار ترش و شیرین ساوه، پرآب و خوشمزه', category: 'fruits', tags: ['انار', 'میوه', 'pomegranate'] },
   { id: 12, type: 'product', url: '/products/12', title: 'کاهو ارگانیک', description: 'کاهو سبز تازه و ترد از مزارع ورامین', category: 'vegetables', tags: ['کاهو', 'سبزی', 'lettuce'] },
+  { id: 13, type: 'product', url: '/products/13', title: 'کیوی ارگانیک', description: 'کیوی سبز و ترش از باغ‌های گیلان', category: 'fruits', tags: ['کیوی', 'میوه', 'گیلان', 'kiwi'] },
+  { id: 14, type: 'product', url: '/products/14', title: 'انگور ارگانیک', description: 'انگور شیرین و آبدار ملایر', category: 'fruits', tags: ['انگور', 'میوه', 'ملایر', 'grape'] },
+  { id: 15, type: 'product', url: '/products/15', title: 'خرما مضافتی', description: 'خرما مضافتی بم، شیرین و مقوی', category: 'fruits', tags: ['خرما', 'مضافتی', 'بم', 'date'] },
+  { id: 16, type: 'product', url: '/products/16', title: 'اسفناج ارگانیک', description: 'اسفناج تازه و سبز از مزارع دزفول', category: 'vegetables', tags: ['اسفناج', 'سبزی', 'دزفول', 'spinach'] },
+  { id: 17, type: 'product', url: '/products/17', title: 'کلم بروکلی ارگانیک', description: 'کلم بروکلی سبز و خوشمزه شوشتر', category: 'vegetables', tags: ['کلم', 'بروکلی', 'شوشتر', 'broccoli'] },
+  { id: 18, type: 'product', url: '/products/18', title: 'هویج ارگانیک', description: 'هویج شیرین و نارنجی محلات', category: 'vegetables', tags: ['هویج', 'سبزی', 'محلات', 'carrot'] },
+  { id: 19, type: 'product', url: '/products/19', title: 'پنیر گوسفندی', description: 'پنیر گوسفندی سنتی و خوشمزه', category: 'dairy', tags: ['پنیر', 'گوسفندی', 'لبنیات', 'cheese'] },
+  { id: 20, type: 'product', url: '/products/20', title: 'کره محلی', description: 'کره محلی از شیر تازه گاو', category: 'dairy', tags: ['کره', 'محلی', 'لبنیات', 'butter'] },
+  { id: 21, type: 'product', url: '/products/21', title: 'دوغ سنتی', description: 'دوغ سنتی گازدار و خوشمزه', category: 'dairy', tags: ['دوغ', 'سنتی', 'لبنیات', 'doogh'] },
+  { id: 22, type: 'product', url: '/products/22', title: 'لوبیا قرمز ارگانیک', description: 'لوبیا قرمز ارگانیک خمین', category: 'grains', tags: ['لوبیا', 'قرمز', 'خمین', 'beans'] },
+  { id: 23, type: 'product', url: '/products/23', title: 'نخود ارگانیک', description: 'نخود ارگانیک کرمانشاه', category: 'grains', tags: ['نخود', 'کرمانشاه', 'chickpea'] },
+  { id: 24, type: 'product', url: '/products/24', title: 'عدس ارگانیک', description: 'عدس ارگانیک لرستان', category: 'grains', tags: ['عدس', 'لرستان', 'lentil'] },
+  { id: 25, type: 'product', url: '/products/25', title: 'گندم کامل ارگانیک', description: 'گندم کامل ارگانیک کردستان', category: 'grains', tags: ['گندم', 'کامل', 'کردستان', 'wheat'] },
+  { id: 26, type: 'product', url: '/products/26', title: 'جو پوست کنده', description: 'جو پوست کنده ارگانیک همدان', category: 'grains', tags: ['جو', 'همدان', 'barley'] },
+  { id: 27, type: 'product', url: '/products/27', title: 'گردوی تازه', description: 'گردوی تازه تویسرکان', category: 'nuts', tags: ['گردو', 'تازه', 'تویسرکان', 'walnut'] },
+  { id: 28, type: 'product', url: '/products/28', title: 'بادام زمینی', description: 'بادام زمینی ارگانیک آستانه', category: 'nuts', tags: ['بادام', 'زمینی', 'آستانه', 'peanut'] },
+  { id: 29, type: 'product', url: '/products/29', title: 'کشمش پلویی', description: 'کشمش پلویی شیرین ملایر', category: 'nuts', tags: ['کشمش', 'پلویی', 'ملایر', 'raisin'] },
+  { id: 30, type: 'product', url: '/products/30', title: 'خرما پیارم', description: 'خرما پیارم حاجی‌آباد', category: 'nuts', tags: ['خرما', 'پیارم', 'date'] },
+  { id: 31, type: 'product', url: '/products/31', title: 'عسل گون', description: 'عسل گون کوهستان کردستان', category: 'honey', tags: ['عسل', 'گون', 'کردستان', 'honey'] },
+  { id: 32, type: 'product', url: '/products/32', title: 'بره موم (پروپولیس)', description: 'بره موم طبیعی مزرعه ده نشین', category: 'honey', tags: ['بره موم', 'پروپولیس', 'عسل', 'propolis'] },
+  { id: 33, type: 'product', url: '/products/33', title: 'ژل رویال', description: 'ژل رویال طبیعی مزرعه ده نشین', category: 'honey', tags: ['ژل رویال', 'عسل', 'royal jelly'] },
+  { id: 34, type: 'product', url: '/products/34', title: 'سرکه سیب طبیعی', description: 'سرکه سیب طبیعی مزرعه ده نشین', category: 'honey', tags: ['سرکه', 'سیب', 'vinegar'] },
+  { id: 35, type: 'product', url: '/products/35', title: 'چای سبز ارگانیک', description: 'چای سبز ارگانیک لاهیجان', category: 'beverages', tags: ['چای', 'سبز', 'لاهیجان', 'tea'] },
+  { id: 36, type: 'product', url: '/products/36', title: 'دمنوش نعناع', description: 'دمنوش نعناع مزرعه ده نشین', category: 'beverages', tags: ['دمنوش', 'نعناع', 'mint'] },
+  { id: 37, type: 'product', url: '/products/37', title: 'دم کرده آویشن', description: 'دم کرده آویشن یزد', category: 'beverages', tags: ['آویشن', 'دمنوش', 'thyme'] },
+  { id: 38, type: 'product', url: '/products/38', title: 'دم کرده بابونه', description: 'دم کرده بابونه مزرعه ده نشین', category: 'beverages', tags: ['بابونه', 'دمنوش', 'chamomile'] },
 ]
 
 function fullTextSearch(query, items) {
@@ -77,7 +103,19 @@ export default function SearchResults() {
 
   return (
     <div style={{ minHeight: '100vh', background: '#F5F0E8' }}>
-      <div style={{
+      <style>{`
+        @media (max-width: 768px) {
+          .search-header { padding: 100px 20px 40px !important; }
+          .search-header h1 { font-size: 1.6rem !important; }
+          .search-results-wrap { padding: 24px 16px !important; }
+        }
+        @media (max-width: 480px) {
+          .search-header { padding: 90px 16px 30px !important; }
+          .search-header h1 { font-size: 1.3rem !important; }
+          .search-header form { flex-direction: column !important; }
+        }
+      `}</style>
+      <div className="search-header" style={{
         padding: '120px 40px 50px', textAlign: 'center',
         background: '#fff', borderBottom: '1px solid rgba(0,0,0,0.06)',
       }}>
@@ -108,7 +146,7 @@ export default function SearchResults() {
         </form>
       </div>
 
-      <div style={{ maxWidth: 1100, margin: '0 auto', padding: '40px 20px' }}>
+      <div className="search-results-wrap" style={{ maxWidth: 1100, margin: '0 auto', padding: '40px 20px' }}>
         {!query && (
           <div style={{ textAlign: 'center', padding: 80, color: '#6B6B6B' }}>
             <div style={{ fontSize: '3rem', marginBottom: 16 }}>🔍</div>
