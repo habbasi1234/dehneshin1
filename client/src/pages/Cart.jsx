@@ -5,6 +5,7 @@ import ScrollReveal from '../components/ScrollReveal'
 import axios from 'axios'
 import useSEO from '../hooks/useSEO'
 import { parsePrice } from '../utils/price'
+import { useToast } from '../components/admin/Toast'
 
 const statusFlow = ['pending', 'processing', 'delivery', 'completed']
 const statusLabels = {
@@ -42,6 +43,7 @@ export default function Cart() {
   const [promoCode, setPromoCode] = useState('')
   const [promoDiscount, setPromoDiscount] = useState(0)
   const [promoError, setPromoError] = useState('')
+  const addToast = useToast()
 
   useEffect(() => {
     try {
@@ -144,7 +146,7 @@ export default function Cart() {
 
   const submitOrder = async () => {
     if (cart.length === 0) return
-    if (!form.name || !form.phone) { alert('لطفاً نام و موبایل خود را وارد کنید'); return }
+    if (!form.name || !form.phone) { addToast('لطفاً نام و موبایل خود را وارد کنید', 'error'); return }
     setSubmitting(true)
     try {
       const { data } = await axios.post('/api/orders', {
@@ -165,7 +167,7 @@ export default function Cart() {
       setSubmitted(true)
       localStorage.removeItem('cart')
     } catch (e) {
-      alert(e.response?.data?.error || 'خطا در ثبت سفارش')
+      addToast(e.response?.data?.error || 'خطا در ثبت سفارش', 'error')
     }
     setSubmitting(false)
   }

@@ -8,6 +8,7 @@ import ContactSection from '../components/ContactSection'
 import EcoMapSection from '../components/EcoMapSection'
 import useSEO from '../hooks/useSEO'
 import { useLanguage } from '../context/LanguageContext'
+import { useToast } from '../components/admin/Toast'
 import { parsePrice } from '../utils/price'
 
 const categories = [
@@ -55,6 +56,7 @@ function SectionHeader({ title, subtitle, link, linkText, icon, color }) {
 
 function ProductCard({ p, i, sale }) {
   const { getText } = useLanguage()
+  const addToast = useToast()
   let imgs = p.images
   if (typeof imgs === 'string') { try { imgs = JSON.parse(imgs) } catch { imgs = [] } }
   const img = Array.isArray(imgs) ? imgs[0] || '' : p.image || ''
@@ -71,7 +73,7 @@ function ProductCard({ p, i, sale }) {
     else cart.push({ productId: p.id || p._id, name: p.name, price: finalPrice, quantity: 1, image: img, originalPrice: hasSale ? p.price : '' })
     localStorage.setItem('cart', JSON.stringify(cart))
     window.dispatchEvent(new Event('cart-update'))
-    alert('به سبد خرید اضافه شد ✓')
+    addToast('به سبد خرید اضافه شد')
   }
 
   return (
@@ -168,6 +170,12 @@ export default function Home() {
   const [settings, setSettings] = useState(null)
   const scrollRef = useRef(null)
   const { getText } = useLanguage()
+  const addToast = useToast()
+
+  const handleNewsletter = (e) => {
+    e.preventDefault()
+    addToast('عضویت شما با موفقیت ثبت شد. کد تخفیف: DEHNESHIN10')
+  }
 
   useEffect(() => {
     axios.get('/api/admin/settings').then(({ data }) => setSettings(data)).catch(() => {})
@@ -469,7 +477,7 @@ export default function Home() {
             <span style={{ fontSize: 40, display: 'block', marginBottom: 12 }}>📬</span>
             <h2 style={{ color: '#2D2D2D', fontSize: 20, fontWeight: 800, margin: '0 0 6px' }}>عضویت در خبرنامه</h2>
             <p style={{ color: '#6B6B6B', fontSize: 12, margin: '0 0 20px' }}>اولین نفری باشید که از تخفیف‌ها و محصولات جدید باخبر می‌شوید + ۱۰٪ تخفیف ویژه!</p>
-            <form onSubmit={e => { e.preventDefault(); alert('عضویت شما با موفقیت ثبت شد. کد تخفیف: DEHNESHIN10') }}
+            <form onSubmit={handleNewsletter}
               style={{ display: 'flex', gap: 8, maxWidth: 420, margin: '0 auto' }}>
               <input type="email" placeholder="ایمیل خود را وارد کنید" required
                 style={{

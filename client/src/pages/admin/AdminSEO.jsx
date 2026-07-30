@@ -1,5 +1,6 @@
 ﻿import { useState, useEffect, useCallback, useRef } from 'react'
 import axios from 'axios'
+import { useToast } from '../../components/admin/Toast'
 
 const gold = '#D4AF37'
 const textPrimary = '#F5E6C8'
@@ -63,6 +64,7 @@ export default function AdminSEO() {
   const [schema, setSchema] = useState('')
   const [loading, setLoading] = useState(false)
   const [saved, setSaved] = useState(false)
+  const addToast = useToast()
   const [extractUrl, setExtractUrl] = useState('')
   const [extractResult, setExtractResult] = useState(null)
   const [extractLoading, setExtractLoading] = useState(false)
@@ -174,7 +176,7 @@ export default function AdminSEO() {
       settings.schemaOrg = parsed
       await axios.put('/api/admin/settings', settings)
       setSaved(true); setTimeout(() => setSaved(false), 2000)
-    } catch (e) { alert('JSON نامعتبر: ' + e.message) }
+    } catch (e) { addToast('JSON نامعتبر: ' + e.message, 'error') }
     setLoading(false)
   }
 

@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import ScrollReveal from '../components/ScrollReveal'
 import axios from 'axios'
 import { useLanguage } from '../context/LanguageContext'
+import { useToast } from '../components/admin/Toast'
 import useSEO from '../hooks/useSEO'
 import { parsePrice } from '../utils/price'
 
@@ -47,6 +48,7 @@ export default function Products() {
   const [lightbox, setLightbox] = useState({ open: false, images: [], idx: 0 })
   const [popular, setPopular] = useState([])
   const { lang, t } = useLanguage()
+  const addToast = useToast()
 
   const productName = (p) => p[`name_${lang}`] || p.name || ''
   const productDesc = (p) => p[`desc_${lang}`] || p.description || ''
@@ -297,7 +299,7 @@ export default function Products() {
                                 else cart.push({ productId: product.id, name: product.name, price: finalPrice, quantity: 1, originalPrice: hasSale ? product.price : '' })
                                 localStorage.setItem('cart', JSON.stringify(cart))
                                 window.dispatchEvent(new Event('cart-update'))
-                                alert('به سبد خرید اضافه شد ✓')
+                                addToast('به سبد خرید اضافه شد')
                               }}
                               style={{
                                 width: '100%', padding: '8px', borderRadius: 6,

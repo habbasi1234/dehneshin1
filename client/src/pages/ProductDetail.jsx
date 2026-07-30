@@ -7,6 +7,7 @@ import track, { usePageTracking, useProductTracking } from '../hooks/useTracking
 import { useLanguage } from '../context/LanguageContext'
 import useSEO from '../hooks/useSEO'
 import { parsePrice } from '../utils/price'
+import { useToast } from '../components/admin/Toast'
 
 function StarRating({ value, onChange, size = 22, readonly = false }) {
   return (
@@ -38,6 +39,7 @@ export default function ProductDetail() {
 
   const [reviews, setReviews] = useState([])
   const [reviewForm, setReviewForm] = useState({ name: '', email: '', rating: 0, comment: '' })
+  const addToast = useToast()
   const [reviewMsg, setReviewMsg] = useState('')
   const [submitting, setSubmitting] = useState(false)
 
@@ -151,7 +153,7 @@ export default function ProductDetail() {
     }
     localStorage.setItem('cart', JSON.stringify(cart))
     window.dispatchEvent(new Event('cart-update'))
-    alert(`"${pName(product)}" به سبد خرید اضافه شد`)
+    addToast(`"${pName(product)}" به سبد خرید اضافه شد`)
   }
 
   if (loading) {
