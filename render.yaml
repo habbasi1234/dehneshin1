@@ -11,4 +11,4 @@ services:
       - key: MONGODB_URI
         sync: false
       - key: CORS_ORIGIN
-        value: https://dehneshin.onrender.com
+        value: https://dehneshin-6c0c.onrender.com,https://dehneshin.onrender.com,http://localhost:5173,http://localhost:5000
